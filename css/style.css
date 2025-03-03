@@ -12,7 +12,6 @@ body {
     padding: 0;
 }
 
-
 .navbar-brand, .nav-link {
     font-family: 'Bubblegum Sans', cursive;
     color: #F2C12E !important;
@@ -34,9 +33,6 @@ body {
     width: 80px;
     transition: all 0.3s ease-in-out;
 }
-
-
-
 
 /* === Navbar === */
 .navbar {
@@ -97,8 +93,6 @@ body {
 
 
 
-
-
 /* Ajuste do carrossel para não ficar atrás da navbar e ocupar mais espaço */
 .carousel-container {
     margin-top: 120px;
@@ -115,27 +109,35 @@ body {
         margin-top: 160px;
     }
 }
-    
-    .large {
-        height: 150px; /* Redução da altura para telas menores */
+
+@media (max-width: 768px) {
+    .carousel-container {
+        margin-top: 100px;
     }
-    
-    .small {
-        height: 80px;
-    }
-    
-    .large {
-        height: 200px;
-    }
-    
-    .small {
-        height: 100px;
-    }
+}
 
 .carousel-item img {
     height: 90vh;
     width: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 40vh;
+    }
 }
 
 /* Ajustes específicos para cada imagem */
@@ -199,10 +201,6 @@ body {
     margin-top: 10px;
 }
 
-
-
-
-
 /* Grid de serviços ajustada para notebook */
 @media (min-width: 992px) {
     .service-container {
@@ -217,18 +215,29 @@ body {
     }
 }
 
+/* Melhorando a responsividade para tablets */
 @media (max-width: 992px) {
+    .service-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .service-card {
         width: calc(33.33% - 20px);
     }
 }
 
-@media (max-width: 576px) {
-    .service-card {
-        width: calc(33.33% - 20px);
-    }
+/* Ajustes para mobile */
+@media (max-width: 768px) {
     .service-container {
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 colunas no mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .service-container {
+        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 colunas mesmo em telas menores */
+    }
+    .service-card {
+        width: calc(33.33% - 10px);
     }
 }
 
@@ -255,11 +264,6 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
-
-
-
-
-
 
 /* Seção de Portfólio */
 .portfolio-section {
@@ -302,27 +306,18 @@ body {
     }
 }
 
-/* 📌 Mobile - 3, 3 e 2 imagens por linha */
+/* 📌 Mobile - Mantendo 3 imagens por linha */
 @media (max-width: 768px) {
     .portfolio-container {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    /* Garante que as últimas duas imagens fiquem alinhadas */
-    .portfolio-item:nth-child(7),
-    .portfolio-item:nth-child(8) {
-        grid-column: span 1;
-    }
 }
 
-/* 📌 Pequenos celulares - Última linha com 2 imagens */
 @media (max-width: 480px) {
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 imagens por linha também em celulares pequenos */
     }
 }
-
-
 
 
 /* === Seção Trabalhe Conosco === */
@@ -331,8 +326,6 @@ body {
     color: #fff;
     padding: 60px 0;
 }
-
-
 
 /* Efeito de cor alternada no título */
 @keyframes colorSwap {
@@ -346,11 +339,6 @@ body {
     font-weight: bold;
     text-align: center;
     animation: colorSwap 3s infinite alternate;
-}
-
-
-
-.section-title {
     font-family: 'Fredoka One', cursive;
     margin-bottom: 15px;
 }
@@ -380,7 +368,9 @@ body {
 /* Links Sociais */
 .social-links {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .social-link {
@@ -401,11 +391,11 @@ body {
     opacity: 0.8;
 }
 
-
 .contact-wrapper {
     max-width: 800px;
     margin: auto;
     padding: 0 15px;
+    text-align: center;
 }
 
 .contact-heading {
@@ -472,6 +462,21 @@ body {
     height: 24px;
 }
 
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .contact-wrapper {
+        padding: 0 10px;
+    }
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 /* WhatsApp Floating Button */
 .whatsapp-float {
@@ -483,9 +488,29 @@ body {
     z-index: 100;
     border-radius: 50%;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    background-color: #25D366; /* Cor do WhatsApp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Estilos para as Páginas de Serviços */
+.whatsapp-float img {
+    width: 70%;
+    height: auto;
+}
 
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+}
 
-
+/* Responsividade - Ajuste para telas menores */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
