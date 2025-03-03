@@ -116,6 +116,7 @@ body {
     }
 }
 
+/* Ajuste para a imagem ocupar mais espaço no mobile */
 .carousel-item img {
     height: 90vh;
     width: 100%;
@@ -124,19 +125,19 @@ body {
 
 @media (max-width: 992px) {
     .carousel-item img {
-        height: 70vh;
+        height: 85vh; /* Mantém o tamanho grande para tablets */
     }
 }
 
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 50vh;
+        height: 95vh; /* Aumenta a altura para ocupar mais a tela no mobile */
     }
 }
 
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 40vh;
+        height: 100vh; /* Ocupa toda a tela em celulares menores */
     }
 }
 
@@ -146,6 +147,7 @@ body {
 .carousel-item:nth-child(3) img { object-position: center; }
 .carousel-item:nth-child(4) img { object-position: center; }
 .carousel-item:nth-child(5) img { object-position: center 30%; }
+
 
 /* Serviços */
 #services {
@@ -161,85 +163,94 @@ body {
     margin-bottom: 30px;
 }
 
+/* Contêiner Flexível */
 .service-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
+/* Cartão de Serviço */
 .service-card {
     border: none;
     background: transparent;
-    width: calc(25% - 20px);
-    margin-bottom: 20px;
+    width: calc(25% - 15px);
+    margin-bottom: 15px;
     text-align: center;
+    padding: 10px; /* Melhora o espaçamento interno */
 }
 
+/* Imagem do Serviço */
 .service-img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #26A6A6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #26A6A6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Ajuste do tamanho da fonte na seção de serviços */
+/* Título do Serviço */
 .service-title {
-    font-family: 'Fredoka One', cursive; /* Mantém a fonte correta */
-    font-size: 1.4rem; /* Diminui a fonte para um tamanho mais equilibrado */
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem; /* Ajuste para não ficar muito grande */
     font-weight: bold;
     color: #26A6A6;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
-/* Grid de serviços ajustada para notebook */
+/* 🖥️ Notebook - 5 Serviços por Linha */
 @media (min-width: 992px) {
     .service-container {
         display: grid;
-        grid-template-columns: repeat(5, 1fr); /* Primeira linha com 5 serviços */
-        gap: 15px;
-    }
-
-    /* Ajusta a última linha para centralizar 4 serviços */
-    .service-container .service-card:nth-child(n+6) {
-        grid-column: span 1;
+        grid-template-columns: repeat(5, 1fr); /* 5 por linha */
+        gap: 10px;
     }
 }
 
-/* Melhorando a responsividade para tablets */
+/* 📱 Tablets - 3 Serviços por Linha */
 @media (max-width: 992px) {
     .service-container {
         grid-template-columns: repeat(3, 1fr);
     }
     .service-card {
-        width: calc(33.33% - 20px);
+        width: calc(33.33% - 15px);
     }
 }
 
-/* Ajustes para mobile */
+/* 📱 Mobile - Mantendo 3 por Linha e Melhorando Layout */
 @media (max-width: 768px) {
     .service-container {
-        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 colunas no mobile */
-    }
-}
-
-@media (max-width: 576px) {
-    .service-container {
-        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 colunas mesmo em telas menores */
+        grid-template-columns: repeat(3, 1fr);
     }
     .service-card {
         width: calc(33.33% - 10px);
+        margin-bottom: 10px;
     }
 }
+
+/* 📱 Mobile Pequeno - Mantendo 3 por Linha e Melhorando Fonte */
+@media (max-width: 576px) {
+    .service-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .service-card {
+        width: calc(33.33% - 10px);
+        margin-bottom: 10px;
+    }
+    .service-title {
+        font-size: 1rem; /* Reduzindo a fonte para manter o equilíbrio */
+    }
+}
+
 
 /* Sobre */
 #sobre {
