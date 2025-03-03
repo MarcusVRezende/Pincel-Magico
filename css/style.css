@@ -129,15 +129,21 @@ body {
     }
 }
 
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 70vh; /* Mantém o tamanho grande para tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 95vh; /* Aumenta a altura para ocupar mais a tela no mobile */
+        height: 80vh; /* Aumenta a altura para ocupar mais a tela no mobile */
     }
 }
 
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 60vh; /* Ocupa toda a tela em celulares menores */
+        height: 65vh; /* Ocupa toda a tela em celulares menores */
     }
 }
 
