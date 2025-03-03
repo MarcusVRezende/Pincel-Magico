@@ -1,0 +1,491 @@
+/* Importando fontes infantis do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+/* Estilos Gerais */
+body {
+    font-family: 'Baloo 2', cursive;
+    scroll-behavior: smooth;
+    background-color: #FDFDFD;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-brand, .nav-link {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #F2C12E !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F22E8A !important;
+}
+
+.navbar.large {
+    padding: 20px 20px;
+}
+
+.navbar.large .navbar-brand img {
+    width: 120px;
+}
+
+.navbar-brand img {
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/* === Navbar === */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #26A6A6;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Ajustes para o dropdown de Serviços */
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    color: #333;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #26A6A6;
+    color: #fff;
+}
+
+/* Navbar Responsiva */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+
+
+
+
+
+/* Ajuste do carrossel para não ficar atrás da navbar e ocupar mais espaço */
+.carousel-container {
+    margin-top: 120px;
+}
+
+@media (max-width: 1200px) {
+    .carousel-container {
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-container {
+        margin-top: 160px;
+    }
+}
+    
+    .large {
+        height: 150px; /* Redução da altura para telas menores */
+    }
+    
+    .small {
+        height: 80px;
+    }
+    
+    .large {
+        height: 200px;
+    }
+    
+    .small {
+        height: 100px;
+    }
+
+.carousel-item img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Ajustes específicos para cada imagem */
+.carousel-item:nth-child(1) img { object-position: center 59%; }
+.carousel-item:nth-child(2) img { object-position: center 40%; }
+.carousel-item:nth-child(3) img { object-position: center; }
+.carousel-item:nth-child(4) img { object-position: center; }
+.carousel-item:nth-child(5) img { object-position: center 30%; }
+
+/* Serviços */
+#services {
+    background-color: #FDFDFD;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #F22E8A;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    border: none;
+    background: transparent;
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #26A6A6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste do tamanho da fonte na seção de serviços */
+.service-title {
+    font-family: 'Fredoka One', cursive; /* Mantém a fonte correta */
+    font-size: 1.4rem; /* Diminui a fonte para um tamanho mais equilibrado */
+    font-weight: bold;
+    color: #26A6A6;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Grid de serviços ajustada para notebook */
+@media (min-width: 992px) {
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Primeira linha com 5 serviços */
+        gap: 15px;
+    }
+
+    /* Ajusta a última linha para centralizar 4 serviços */
+    .service-container .service-card:nth-child(n+6) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .service-card {
+        width: calc(33.33% - 20px);
+    }
+    .service-container {
+        justify-content: center;
+    }
+}
+
+/* Sobre */
+#sobre {
+    padding: 60px 0;
+    background-color: #26A6A6;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #F2C12E;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+}
+
+#sobre .sobre-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* Seção de Portfólio */
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Fundo suave */
+}
+
+/* Grid do Portfólio */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 imagens por linha */
+    gap: 5px; /* Pequeno espaçamento entre imagens */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Configuração das imagens */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px; /* Mantém o tamanho uniforme */
+    object-fit: cover; /* Mantém a proporção correta */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Zoom suave */
+}
+
+/* 📌 Tablet - 3 imagens por linha */
+@media (max-width: 992px) {
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 📌 Mobile - 3, 3 e 2 imagens por linha */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Garante que as últimas duas imagens fiquem alinhadas */
+    .portfolio-item:nth-child(7),
+    .portfolio-item:nth-child(8) {
+        grid-column: span 1;
+    }
+}
+
+/* 📌 Pequenos celulares - Última linha com 2 imagens */
+@media (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/* === Seção Trabalhe Conosco === */
+.contact-section {
+    background-color: #26A6A6;
+    color: #fff;
+    padding: 60px 0;
+}
+
+
+
+/* Efeito de cor alternada no título */
+@keyframes colorSwap {
+    0% { color: #fb80b3; }
+    50% { color: #c6f6ff; }
+    100% { color: #fb80b3; }
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    animation: colorSwap 3s infinite alternate;
+}
+
+
+
+.section-title {
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Botão do WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DA851;
+}
+
+/* Links Sociais */
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+
+.contact-wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.contact-heading {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.work-with-us {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.whatsapp-link:hover {
+    background-color: #1DA851;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Estilos para as Páginas de Serviços */
+
+
+
