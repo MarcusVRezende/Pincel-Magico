@@ -137,7 +137,7 @@ body {
 
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 75vh; /* Ocupa toda a tela em celulares menores */
+        height: 60vh; /* Ocupa toda a tela em celulares menores */
     }
 }
 
