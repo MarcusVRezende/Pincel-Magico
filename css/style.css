@@ -182,9 +182,13 @@ body {
 
 /* Segunda linha: 4 serviços alinhados CENTRALIZADOS */
 .second-row {
-    display: flex;
-    justify-content: center;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* Mantém 4 colunas */
     gap: 15px;
+    justify-content: center;
+    align-items: center; /* Garante alinhamento vertical */
+    margin: 0 auto;
+    width: 100%; /* Evita que fique desalinhado */
 }
 
 /* Cartão de Serviço */
@@ -242,25 +246,35 @@ body {
     }
 }
 
-/* 📱 Mobile Pequeno - Mantendo 3 por Linha */
+/* 📱 Mobile Pequeno - Mantendo 3 por Linha corretamente */
 @media (max-width: 576px) {
-    .first-row, .second-row {
+    .service-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 itens por linha */
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr); /* Sempre 3 por linha */
+        gap: 10px;
+        justify-content: center; /* Centraliza os itens */
+        align-items: center; /* Garante alinhamento vertical */
     }
+    
     .service-card {
-        width: auto; /* Mantém o tamanho correto */
+        width: 100%; /* Garante que os cards fiquem alinhados */
         padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     .service-img {
-        width: 90px; /* Pequena redução para encaixar melhor */
-        height: 90px;
+        width: 80px; /* Redução para encaixar melhor */
+        height: 80px;
     }
+
     .service-title {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        text-align: center;
     }
 }
+
 
 
 
