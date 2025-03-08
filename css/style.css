@@ -247,11 +247,11 @@ body {
 }
 
 /* 📱 Mobile Pequeno - Mantendo 3 por Linha corretamente */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .service-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Sempre 3 por linha */
-        gap: 10px;
+        gap: 5px;
         justify-content: center; /* Centraliza os itens */
         align-items: center; /* Garante alinhamento vertical */
     }
@@ -265,8 +265,8 @@ body {
     }
 
     .service-img {
-        width: 80px; /* Redução para encaixar melhor */
-        height: 80px;
+        width: 100px; /* Redução para encaixar melhor */
+        height: 100px;
     }
 
     .service-title {
