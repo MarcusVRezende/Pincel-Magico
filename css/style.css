@@ -193,6 +193,7 @@ body {
     background: transparent;
     text-align: center;
     padding: 10px;
+    width: auto; /* Ajustando para evitar quebra de linha */
 }
 
 /* Imagem do Serviço */
@@ -241,25 +242,26 @@ body {
     }
 }
 
-/* 📱 Mobile Pequeno - Ajustando para 3 por Linha */
+/* 📱 Mobile Pequeno - Mantendo 3 por Linha */
 @media (max-width: 576px) {
     .first-row, .second-row {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
+        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 itens por linha */
+        gap: 8px;
     }
     .service-card {
-        width: auto;
+        width: auto; /* Mantém o tamanho correto */
         padding: 5px;
     }
     .service-img {
-        width: 100px;
-        height: 100px;
+        width: 90px; /* Pequena redução para encaixar melhor */
+        height: 90px;
     }
     .service-title {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
+
 
 
 /* Sobre */
