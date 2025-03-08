@@ -169,6 +169,22 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Primeira linha: 5 serviços alinhados */
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+/* Segunda linha: 4 serviços alinhados CENTRALIZADOS */
+.second-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 /* Cartão de Serviço */
@@ -181,7 +197,7 @@ body {
 
 /* Imagem do Serviço */
 .service-img {
-    width: 130px; /* Reduzindo um pouco para evitar sobreposição */
+    width: 130px; 
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
@@ -198,48 +214,50 @@ body {
 /* Título do Serviço */
 .service-title {
     font-family: 'Fredoka One', cursive;
-    font-size: 1.1rem; /* Ajustando para telas menores */
+    font-size: 1.1rem;
     font-weight: bold;
     color: #26A6A6;
     text-align: center;
     margin-top: 8px;
 }
 
-/* 🖥️ Notebook - 5 Serviços por Linha */
+/* 🖥️ Notebook - 5 Serviços na primeira linha e 4 na segunda */
 @media (min-width: 992px) {
-    .service-container {
-        display: grid;
+    .first-row {
         grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
+    }
+
+    .second-row {
+        justify-content: center;
     }
 }
 
 /* 📱 Tablets - 3 Serviços por Linha */
 @media (max-width: 992px) {
-    .service-container {
+    .first-row, .second-row {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 }
 
-/* 📱 Mobile Pequeno - Ajustando para 3 por Linha e Evitando Sobreposição */
+/* 📱 Mobile Pequeno - Ajustando para 3 por Linha */
 @media (max-width: 576px) {
-    .service-container {
+    .first-row, .second-row {
         display: grid;
-        grid-template-columns: repeat(3, minmax(90px, 1fr)); /* Garantindo tamanho mínimo */
-        gap: 5px; /* Reduzindo espaçamento para não sobrepor */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
     .service-card {
-        width: auto; /* Evita que quebre o layout */
+        width: auto;
         padding: 5px;
     }
     .service-img {
-        width: 100px; /* Reduzindo tamanho da imagem */
+        width: 100px;
         height: 100px;
     }
     .service-title {
-        font-size: 0.9rem; /* Ajustando fonte menor */
+        font-size: 0.9rem;
     }
 }
 
@@ -249,7 +267,7 @@ body {
     padding: 60px 0;
     background-color: #26A6A6;
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
 }
 
 #sobre h2 {
@@ -542,8 +560,8 @@ body {
 /* Botão flutuante do WhatsApp */
 .whatsapp-float {
     position: fixed;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
     bottom: 20px;
     right: 20px;
     z-index: 100;
@@ -574,4 +592,4 @@ body {
         bottom: 15px;
         right: 15px;
     }
-}
+} 
