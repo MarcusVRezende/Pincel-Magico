@@ -108,7 +108,7 @@ body {
 .navbar-toggler-icon {
     width: 30px;
     height: 3px;
-    background-color: #F2C12E; /* Mantém a cor amarela */
+    background-color: #000000; /* Mantém a cor amarela */
     position: relative;
     display: block;
     transition: all 0.3s ease-in-out;
@@ -129,7 +129,7 @@ body {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #F2C12E; /* Amarelo igual às outras linhas */
+    background-color: #000000; /* Amarelo igual às outras linhas */
     position: absolute;
 }
 
