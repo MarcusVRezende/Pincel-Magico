@@ -549,14 +549,14 @@ html, body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #F2C12E;
+    background-color: #313131;
     padding: 8px 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .email-link:hover {
-    background-color: #E1B222;
+    background-color: #fb80b3;
     transform: scale(1);
 }
 
@@ -679,19 +679,29 @@ html, body {
         color: #fff;
         text-decoration: none;
         font-weight: bold;
-        background-color: #F2C12E;
+        background-color: #313131;
         border-radius: 8px;
         transition: background-color 0.3s, transform 0.2s;
     
 
         display: inline-block;
-        max-width: 85%; /* Evita que a caixa ultrapasse a tela */
+        max-width: 100%; /* Evita que a caixa ultrapasse a tela */
         text-align: center;
-        margin: 8px auto; /* Centraliza */
-        padding: 5px 8px; /* Ajusta padding */
-        font-size: 0.65rem; /* Diminui o tamanho da fonte */
+        margin: 10px auto; /* Centraliza */
+        padding: 5px 10px; /* Ajusta padding */
+        font-size: 0.8rem; /* Diminui o tamanho da fonte */
         white-space: normal; /* Permite quebra de linha para evitar cortes */
         word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+    }
+    .section-description {
+        font-size: 0.9rem;
+        color: #fff;
+    
+        max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+        text-align: left;
+        font-size: 0.8rem; /* Diminui o tamanho da fonte */
+        word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+
     }
 }
 
