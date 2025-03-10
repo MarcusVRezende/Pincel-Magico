@@ -91,8 +91,6 @@ body {
     position: relative;
 }
 
-
-
 .navbar-toggler {
     border: none !important; /* Remove qualquer borda extra */
     box-shadow: none !important; /* Remove sombras extras */
@@ -141,10 +139,6 @@ body {
     top: 8px;
 }
 
-
-
-
-
 /* Remove o traço do meio ao abrir o menu */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background: none !important; /* Remove a linha do meio */
@@ -185,8 +179,6 @@ body {
     }
 }
 
-
-
 /* 📱 Ajuste para mobile pequeno */
 @media (max-width: 576px) {
     .brand-text h1 {
@@ -203,11 +195,6 @@ body {
         width: auto;
     }
 }
-
-
-
-
-
 
 /* Ajuste do carrossel para não ficar atrás da navbar e ocupar mais espaço */
 .carousel-container {
@@ -241,7 +228,7 @@ body {
 
 @media (max-width: 992px) {
     .carousel-item img {
-        height: 70vh; /* Mantém o tamanho grande para tablets */
+        height: 90vh; /* Mantém o tamanho grande para tablets */
     }
 }
 
@@ -253,14 +240,14 @@ body {
 
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 65vh; /* Ocupa toda a tela em celulares menores */
+        height: 70vh; /* Ocupa toda a tela em celulares menores */
     }
 }
 
 /* Ajustes específicos para cada imagem */
 .carousel-item:nth-child(1) img { object-position: center 59%; }
-.carousel-item:nth-child(2) img { object-position: center 40%; }
-.carousel-item:nth-child(3) img { object-position: center; }
+.carousel-item:nth-child(2) img { object-position: center 20%; }
+.carousel-item:nth-child(3) img { object-position: center 20%; }
 .carousel-item:nth-child(4) img { object-position: center; }
 .carousel-item:nth-child(5) img { object-position: center 30%; }
 
@@ -384,13 +371,6 @@ html, body {
     overflow-x: hidden; /* Impede rolagem horizontal */
 }
 
-
-
-
-
-
-
-
 /* Sobre */
 #sobre {
     padding: 60px 0;
@@ -468,11 +448,6 @@ html, body {
         grid-template-columns: repeat(3, 1fr); /* Mantendo 3 imagens por linha também em celulares pequenos */
     }
 }
-
-
-
-
-
 
 /* === Seção contatos === */
 .contact-section {
@@ -578,10 +553,6 @@ html, body {
     padding: 8px 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
-
-   
-
-    
 }
 
 .email-link:hover {
@@ -723,8 +694,6 @@ html, body {
         word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
     }
 }
-
-
 
 /* Botão flutuante do WhatsApp */
 .whatsapp-float {
