@@ -268,6 +268,10 @@ body {
         justify-self: center;
     }
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
 
 
 
@@ -548,12 +552,12 @@ body {
         text-align: center;
     }
 }
-@media (max-width: 480px) {
+    @media (max-width: 480px) {
     .contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Mantém os elementos lado a lado */
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         text-align: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     .contact-left {
@@ -583,14 +587,6 @@ body {
         grid-column: span 2; /* Mantém ocupando toda a largura */
     }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -630,3 +626,21 @@ body {
         right: 15px;
     }
 } 
+@media (max-width: 480px) {
+    .work-section::before {
+        display: none !important;
+    }
+}
+@media (max-width: 576px) {
+    .navbar {
+        padding: 8px 15px; /* Reduz o padding */
+    }
+
+    .navbar-brand img {
+        height: 28px; /* Reduz logo */
+    }
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
