@@ -246,7 +246,7 @@ body {
 @media (max-width: 576px) {
     .service-container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(90px, 1fr)); /* Garantindo tamanho mínimo */
+        grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Garantindo tamanho mínimo */
         gap: 5px; /* Reduzindo espaçamento para não sobrepor */
     }
     .service-card {
