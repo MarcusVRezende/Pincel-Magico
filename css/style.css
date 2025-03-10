@@ -43,52 +43,149 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-brand {
+/* Ajusta o botão do menu (hamburguer) */
+.navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    padding: 5px;
+    outline: none;
+    z-index: 1100}
+
+/* Garante que o menu não empurra o botão */
+.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: none; /* Removendo sombra quando o menu está fechado */
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+
+/* Animação para abrir e fechar o menu */
+.navbar-collapse.collapsing {
+    height: auto !important;
+    transition: height 0.3s ease-in-out;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
+/* Estilos para o ícone do menu */
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #F2C12E;
+    display: block;
+    position: relative;
+}
+
+
+
+.navbar-toggler {
+    border: none !important; /* Remove qualquer borda extra */
+    box-shadow: none !important; /* Remove sombras extras */
+    outline: none !important; /* Remove contornos */
+    background: none !important; /* Remove qualquer fundo */
     display: flex;
     align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #26A6A6;
+    justify-content: center;
+    padding: 0;
 }
 
-.navbar-brand img {
-    height: 40px;
-    width: auto;
-    margin-right: 10px;
+/* Mantém as três linhas amarelas */
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #F2C12E; /* Mantém a cor amarela */
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Ajustes para o dropdown de Serviços */
-.dropdown-menu {
-    background-color: #f8f9fa;
-    border-radius: 5px;
+/* Força a remoção de qualquer traço preto */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-.dropdown-item {
-    color: #333;
-    font-size: 16px;
+/* Garante que as outras linhas também ficam amarelas */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #F2C12E; /* Amarelo igual às outras linhas */
+    position: absolute;
 }
 
-.dropdown-item:hover {
-    background-color: #26A6A6;
-    color: #fff;
+.navbar-toggler-icon::before {
+    top: -8px;
 }
 
-/* Navbar Responsiva */
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+
+
+
+
+/* Remove o traço do meio ao abrir o menu */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: none !important; /* Remove a linha do meio */
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Quando o menu está aberto, anima o ícone */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Responsividade */
 @media (max-width: 992px) {
     .navbar {
         padding: 10px 20px;
     }
-
-    .navbar-brand {
-        font-size: 20px;
+    .navbar-nav {
+        padding-left: 20px !important; /* Puxa os textos um pouco para dentro */
     }
 
-    .navbar-toggler {
-        border: none;
+    .nav-link {
+        padding-left: 10px !important; /* Ajusta mais o espaçamento */
+        text-align: left; /* Garante que o texto fica alinhado corretamente */
     }
 }
+
+
 
 /* 📱 Ajuste para mobile pequeno */
 @media (max-width: 576px) {
@@ -230,6 +327,20 @@ body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 10px;
+    }
+    .navbar-collapse {
+        position: relative;
+        background: none;
+        box-shadow: none;
+        display: flex !important; /* Garante que o menu aparece no desktop */
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
 }
 
