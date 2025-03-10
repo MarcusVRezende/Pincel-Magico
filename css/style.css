@@ -459,7 +459,6 @@ html, body {
 
 /* Link do e-mail */
 .email-link {
-    display: inline-block;
     font-size: 0.9rem;
     color: #fff;
     text-decoration: none;
@@ -468,6 +467,10 @@ html, body {
     padding: 8px 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
+
+   
+
+    
 }
 
 .email-link:hover {
@@ -553,6 +556,8 @@ html, body {
     }
 }
     @media (max-width: 480px) {
+
+
     .contact-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -585,6 +590,26 @@ html, body {
     .company-info {
         font-size: 0.75rem;
         grid-column: span 2; /* Mantém ocupando toda a largura */
+    }
+
+    .email-link {
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: #F2C12E;
+        border-radius: 8px;
+        transition: background-color 0.3s, transform 0.2s;
+    
+
+        display: inline-block;
+        max-width: 85%; /* Evita que a caixa ultrapasse a tela */
+        text-align: center;
+        margin: 8px auto; /* Centraliza */
+        padding: 5px 8px; /* Ajusta padding */
+        font-size: 0.65rem; /* Diminui o tamanho da fonte */
+        white-space: normal; /* Permite quebra de linha para evitar cortes */
+        word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
     }
 }
 
