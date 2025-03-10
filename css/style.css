@@ -698,7 +698,7 @@ html, body {
         color: #fff;
     
         max-width: 100%; /* Evita que a caixa ultrapasse a tela */
-        text-align: left;
+        text-align: center;
         font-size: 0.8rem; /* Diminui o tamanho da fonte */
         word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
 
