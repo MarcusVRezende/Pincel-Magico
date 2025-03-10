@@ -1,0 +1,632 @@
+/* Importando fontes infantis do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+/* Estilos Gerais */
+body {
+    font-family: 'Baloo 2', cursive;
+    scroll-behavior: smooth;
+    background-color: #FDFDFD;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand, .nav-link {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #F2C12E !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F22E8A !important;
+}
+
+.navbar.large {
+    padding: 20px 20px;
+}
+
+.navbar.large .navbar-brand img {
+    width: 120px;
+}
+
+.navbar-brand img {
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* === Navbar === */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #26A6A6;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Ajustes para o dropdown de Serviços */
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    color: #333;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #26A6A6;
+    color: #fff;
+}
+
+/* Navbar Responsiva */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+/* 📱 Ajuste para mobile pequeno */
+@media (max-width: 576px) {
+    .brand-text h1 {
+        font-size: 16px; /* Reduz o tamanho do título */
+        margin: 0; /* Remove espaçamentos extras */
+    }
+
+    .navbar-brand {
+        font-size: 16px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .navbar-brand img {
+        height: 30px; /* Reduzindo o tamanho da logo */
+        width: auto;
+    }
+}
+
+
+
+
+
+
+/* Ajuste do carrossel para não ficar atrás da navbar e ocupar mais espaço */
+.carousel-container {
+    margin-top: 120px;
+}
+
+@media (max-width: 1200px) {
+    .carousel-container {
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-container {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        margin-top: 100px;
+    }
+}
+
+/* Ajuste para a imagem ocupar mais espaço no mobile */
+.carousel-item img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 70vh; /* Mantém o tamanho grande para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 80vh; /* Aumenta a altura para ocupar mais a tela no mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 65vh; /* Ocupa toda a tela em celulares menores */
+    }
+}
+
+/* Ajustes específicos para cada imagem */
+.carousel-item:nth-child(1) img { object-position: center 59%; }
+.carousel-item:nth-child(2) img { object-position: center 40%; }
+.carousel-item:nth-child(3) img { object-position: center; }
+.carousel-item:nth-child(4) img { object-position: center; }
+.carousel-item:nth-child(5) img { object-position: center 30%; }
+
+
+/* Serviços */
+#services {
+    background-color: #FDFDFD;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #F22E8A;
+    margin-bottom: 30px;
+}
+
+/* Contêiner de Serviços */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Cartão de Serviço */
+.service-card {
+    border: none;
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Imagem do Serviço */
+.service-img {
+    width: 130px; /* Reduzindo um pouco para evitar sobreposição */
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #26A6A6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Título do Serviço */
+.service-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem; /* Ajustando para telas menores */
+    font-weight: bold;
+    color: #26A6A6;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* 🖥️ Notebook - 5 Serviços por Linha */
+@media (min-width: 992px) {
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+}
+
+/* 📱 Tablets - 3 Serviços por Linha */
+@media (max-width: 992px) {
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+/* 📱 Mobile Pequeno - Ajustando para 3 por Linha e Evitando Sobreposição */
+@media (max-width: 576px) {
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(90px, 1fr)); /* Garantindo tamanho mínimo */
+        gap: 5px; /* Reduzindo espaçamento para não sobrepor */
+    }
+    .service-card {
+        width: auto; /* Evita que quebre o layout */
+        padding: 5px;
+    }
+    .service-img {
+        width: 100px; /* Reduzindo tamanho da imagem */
+        height: 100px;
+    }
+    .service-title {
+        font-size: 0.9rem; /* Ajustando fonte menor */
+    }
+}
+/* 📱 Mobile Pequeno - Centralizar o último item quando não houver par */
+@media (max-width: 576px) {
+    .service-card:nth-last-child(1):nth-child(3n + 1) {
+        grid-column: span 3;
+        justify-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+/* Sobre */
+#sobre {
+    padding: 60px 0;
+    background-color: #26A6A6;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#sobre h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #F2C12E;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+}
+
+#sobre .sobre-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Seção de Portfólio */
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Fundo suave */
+}
+
+/* Grid do Portfólio */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 imagens por linha */
+    gap: 5px; /* Pequeno espaçamento entre imagens */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Configuração das imagens */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px; /* Mantém o tamanho uniforme */
+    object-fit: cover; /* Mantém a proporção correta */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Zoom suave */
+}
+
+/* 📌 Tablet - 3 imagens por linha */
+@media (max-width: 992px) {
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 📌 Mobile - Mantendo 3 imagens por linha */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 imagens por linha também em celulares pequenos */
+    }
+}
+
+
+
+
+
+
+/* === Seção contatos === */
+.contact-section {
+    background-color: #26A6A6;
+    color: #fff;
+    padding: 60px 0;
+}
+
+/* Efeito de cor alternada no título */
+@keyframes colorSwap {
+    0% { color: #fb80b3; }
+    50% { color: #c6f6ff; }
+    100% { color: #fb80b3; }
+}
+
+/* Destacar "Deixe a diversão por nossa conta!" */
+.section-title {
+    font-size: 3rem; /* Aumentei ainda mais */
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    animation: colorSwap 3s infinite alternate;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Organização correta da grade */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 4fr 1.5fr 1.5fr 1.5fr; /* Aumentei a área do primeiro bloco */
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Adicionando barras laterais entre os elementos */
+.contact-grid > div {
+    position: relative;
+    padding: 20px;
+}
+
+.contact-grid > div:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 10%;
+    bottom: 10%;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+/* Ajustando cada seção */
+.contact-left {
+    text-align: center;
+    padding: 0 50px; /* Adicionei espaçamento lateral */
+}
+
+/* Redimensionar os textos para ficarem uniformes */
+.work-section,
+.social-section {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* Diminuição do texto do CNPJ */
+.company-info {
+    text-align: left;
+    font-size: 0.85rem; /* Texto menor */
+}
+
+.company-info h3 {
+    font-size: 1rem; /* Mantendo o nome maior */
+}
+
+/* Botão do WhatsApp */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 1.3rem; /* Deixei o botão mais chamativo */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DA851;
+    transform: scale(1.05);
+}
+
+/* Link do e-mail */
+.email-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #F2C12E;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.email-link:hover {
+    background-color: #E1B222;
+    transform: scale(1);
+}
+
+/* Redes Sociais */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.social-link i {
+    font-size: 1.4rem;
+}
+
+.social-link:hover {
+    color: #c6f6ff;
+    transform: scale(1.05);
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Mantém duas colunas para alinhamento correto */
+        gap: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    .contact-grid > div {
+        padding: 15px;
+        position: relative;
+    }
+
+    /* "Deixe a diversão por nossa conta!" ocupa toda a largura */
+    .contact-left {
+        grid-column: span 2; /* Ocupa as duas colunas */
+    }
+
+    /* Mantém APENAS a barra entre "Venha fazer parte da nossa equipe!" e "Siga-nos nas redes sociais" */
+    .work-section {
+        position: relative;
+    }
+
+    .work-section::after {
+        content: "";
+        position: absolute;
+        right: -8px;
+        top: 10%;
+        bottom: 10%;
+        width: 2px;
+        background-color: #ffffff;
+    }
+
+    /* REMOVE TODAS AS OUTRAS BARRAS */
+    .contact-grid > div::before {
+        display: none !important;
+    }
+
+    /* "PINCEL MÁGICO LTDA" ocupa toda a largura na parte inferior */
+    .company-info {
+        grid-column: span 2;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Mantém os elementos lado a lado */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-left {
+        grid-column: span 2; /* Mantém "Deixe a diversão por nossa conta!" ocupando toda a largura */
+    }
+
+    .work-section,
+    .social-section {
+        font-size: 0.9rem; /* Diminui um pouco os textos */
+    }
+
+    /* Mantém a única barra entre "Venha fazer parte da nossa equipe!" e "Siga-nos nas redes sociais" */
+    .work-section::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #ffffff;
+        transform: translateX(-50%);
+    }
+
+    /* Reduz o tamanho do texto do bloco final "PINCEL MÁGICO LTDA" */
+    .company-info {
+        font-size: 0.75rem;
+        grid-column: span 2; /* Mantém ocupando toda a largura */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-float img {
+    width: 70%;
+    height: auto;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Ajuste para Mobile */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 70px;
+        height: 70px;
+        bottom: 15px;
+        right: 15px;
+    }
+} 
