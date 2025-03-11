@@ -91,6 +91,8 @@ body {
     position: relative;
 }
 
+
+
 .navbar-toggler {
     border: none !important; /* Remove qualquer borda extra */
     box-shadow: none !important; /* Remove sombras extras */
@@ -558,6 +560,7 @@ html, body {
     padding: 8px 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
+
 }
 
 .email-link:hover {
@@ -697,6 +700,18 @@ html, body {
         font-size: 0.8rem; /* Diminui o tamanho da fonte */
         white-space: normal; /* Permite quebra de linha para evitar cortes */
         word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+    }
+    .section-texto{
+        font-size: 0.9rem;
+        color: #fff;
+    
+        max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+        text-align: center;
+        font-size: 0.8rem; /* Diminui o tamanho da fonte */
+        word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+
+
+
     }
     .section-description {
         font-size: 0.9rem;
