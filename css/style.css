@@ -180,7 +180,7 @@ body {
 }
 
 .brand-text h1 {
-    font-size: 35px; /* Reduz o tamanho do título */
+    font-size: 33s px; /* Reduz o tamanho do título */
     margin: 0; /* Remove espaçamentos extras */
 }
 
@@ -558,7 +558,6 @@ html, body {
     padding: 8px 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
-    
 }
 
 .email-link:hover {
@@ -704,7 +703,7 @@ html, body {
         color: #fff;
     
         max-width: 100%; /* Evita que a caixa ultrapasse a tela */
-        text-align: center;
+        text-align: left;
         font-size: 0.8rem; /* Diminui o tamanho da fonte */
         word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
 
