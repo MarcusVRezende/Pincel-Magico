@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script>
-        window.onscroll = function() {
+        window.onscroll = function () {
             const backToTop = document.getElementById('backToTop');
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 backToTop.style.display = 'block';
@@ -23,19 +23,20 @@
                 backToTop.style.display = 'none';
             }
         };
-        
+
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 
     <!-- SEO Meta Tags -->
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Transformamos festas infantis em momentos mágicos com recreação personalizada, Spa Party, Pintura Facial e Oficinas Criativas. Diversão garantida para todas as idades!">
+    <meta name="description"
+        content="Transformamos festas infantis em momentos mágicos! Oferecemos recreação personalizada, Spa Party, Pintura Facial, Oficinas Criativas e muito mais. Diversão garantida para todas as idades!">
 
     <!-- Open Graph (Para Facebook, Instagram, WhatsApp) -->
-    <meta property="og:title" content="Pincel Mágico - Diversão para Crianças">
-    <meta property="og:description" content="Brincadeiras, animação e recreação para festas infantis!">
+    <meta property="og:title" content="Pincel Mágico - Alegria e Diversão para Crianças">
+    <meta property="og:description"
+        content="Criamos experiências inesquecíveis para festas infantis! Brincadeiras, animação e recreação com atividades temáticas e personalizadas.">
     <meta property="og:image" content="https://pincelmagicoanimacoes.com.br/img/carrocel/imagem1.webp">
     <meta property="og:image:secure_url" content="https://pincelmagicoanimacoes.com.br/img/carrocel/imagem1.jpg">
     <meta property="og:image:type" content="image/webp">
@@ -45,14 +46,16 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Pincel Mágico">
 
-    <!-- Twitter Card (Opcional, mas recomendado) -->
+    <!-- Twitter Card (Otimizado) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pincel Mágico - Diversão para Crianças">
-    <meta name="twitter:description" content="Transformamos festas infantis em momentos mágicos com recreação personalizada, Spa Party, Pintura Facial e Oficinas Criativas.">
+    <meta name="twitter:title" content="Pincel Mágico - Alegria e Diversão para Crianças">
+    <meta name="twitter:description"
+        content="Transformamos festas infantis em momentos mágicos com atividades temáticas e personalizadas! Recreação, Spa Party, Pintura Facial e muito mais.">
     <meta name="twitter:image" content="https://pincelmagicoanimacoes.com.br/img/carrocel/imagem1.webp">
-    <meta name="twitter:site" content="@SeuPerfilTwitter">
 
-    <meta name="keywords" content="Recreação infantil, festas infantis, Pincel Mágico, Spa Party, pintura facial, oficinas criativas, animação infantil, eventos para crianças, diversão, pic nic, noite do pijama, clube dos amigos">
+    <!-- Palavras-chave estratégicas -->
+    <meta name="keywords"
+        content="Recreação infantil, festas infantis, Pincel Mágico, Spa Party, pintura facial, oficinas criativas, animação infantil, eventos para crianças, diversão, picnic, noite do pijama, clube dos amigos, entretenimento infantil">
     <meta name="author" content="Pincel Mágico">
     <meta name="robots" content="index, follow">
 
@@ -62,67 +65,73 @@
 <body>
 
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="img/android-chrome-192x192.webp" alt="Logo Pincel Mágico" class="logo">
-            <span class="brand-text"><h1>Pincel Mágico Animações </h1></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Serviços
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <li><a class="dropdown-item" href="#services">Todos os Serviços</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/android-chrome-192x192.webp" alt="Logo Pincel Mágico" class="logo">
+                <span class="brand-text">
+                    <h1>Pincel Mágico Animações </h1>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#services">Todos os Serviços</a></li>
 
-                        <li><a class="dropdown-item" href="services/servico1.html">Spa Party</a></li>
-                        <li><a class="dropdown-item" href="services/servico8.html">Recreação Personalizada</a></li>
-                        <li><a class="dropdown-item" href="services/servico2.html">Pintura de Rosto</a></li>
-                        <li><a class="dropdown-item" href="services/servico3.html">Camarim Fashion</a></li>
-                        <li><a class="dropdown-item" href="services/servico4.html">Oficinas</a></li>
-                        <li><a class="dropdown-item" href="services/servico5.html">Noite de Pijama</a></li>
-                        <li><a class="dropdown-item" href="services/servico6.html">Chá das Amigas</a></li>
-                        <li><a class="dropdown-item" href="services/servico7.html">Clube dos Meninos</a></li>
-                        <li><a class="dropdown-item" href="services/servico9.html">Picnic</a></li>
-                        <li><a class="dropdown-item" href="services/servico10.html">Pintura Gestacional</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Fotos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
+                            <li><a class="dropdown-item" href="services/Spa-Party.html">Spa Party</a></li>
+                            <li><a class="dropdown-item" href="services/Recreacao-Personalizada.html">Recreação
+                                    Personalizada</a></li>
+                            <li><a class="dropdown-item" href="services/Pintura-de-Rosto.html">Pintura de Rosto</a></li>
+                            <li><a class="dropdown-item" href="services/Camarim-Fashion.html">Camarim Fashion</a></li>
+                            <li><a class="dropdown-item" href="services/Oficinas.html">Oficinas Criativas</a></li>
+                            <li><a class="dropdown-item" href="services/Noite-do-Pijama.html">Noite do Pijama</a></li>
+                            <li><a class="dropdown-item" href="services/ChaDasAmigas.html">Chá das Amigas</a></li>
+                            <li><a class="dropdown-item" href="services/Clube-dos-Meninos.html">Clube dos Meninos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services/Picnic.html">Picnic</a></li>
+                            <li><a class="dropdown-item" href="services/Pintura-Gestacional.html">Pintura
+                                    Gestacional</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Fotos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
-<script>
-    window.addEventListener('scroll', function() {
-        let navbar = document.querySelector('.navbar');
-        let logo = document.querySelector('.logo');
-        let brandText = document.querySelector('.brand-text');
-        
-        if (window.scrollY === 0) {
-            navbar.classList.add('large-navbar');
-            logo.style.width = '80px';
-            logo.style.height = '80px';
-            brandText.style.fontSize = '1.5rem';
-        } else {
-            navbar.classList.remove('large-navbar');
-            logo.style.width = '40px';
-            logo.style.height = '40px';
-            brandText.style.fontSize = '1rem';
-        }
-    });
-</script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let navbar = document.querySelector('.navbar');
+            let logo = document.querySelector('.logo');
+            let brandText = document.querySelector('.brand-text');
 
-        <!-- Carousel -->
+            if (window.scrollY === 0) {
+                navbar.classList.add('large-navbar');
+                logo.style.width = '80px';
+                logo.style.height = '80px';
+                brandText.style.fontSize = '1.5rem';
+            } else {
+                navbar.classList.remove('large-navbar');
+                logo.style.width = '40px';
+                logo.style.height = '40px';
+                brandText.style.fontSize = '1rem';
+            }
+        });
+    </script>
+
+    <!-- Carousel -->
     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -149,64 +158,66 @@
         </button>
     </div>
 
-   <!-- Serviços -->
-<section id="services" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Nossos Serviços</h2>
-        
-        <!-- Contêiner único para alinhar corretamente -->
-        <div class="service-container">
-            <div class="service-card" onclick="window.location.href='services/servico1.html'">
-                <img src="img/serviços/spa party.webp" class="service-img" alt="Spa Party" loading="lazy">
-                <p class="service-title">Spa Party</p>
-            </div>
+    <!-- Serviços -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Serviços</h2>
 
-            <div class="service-card" onclick="window.location.href='services/servico8.html'">
-                <img src="img/serviços/recreacao4.webp" class="service-img" alt="Pic Nic" loading="lazy">
-                <p class="service-title">Recreação Personalizada</p>
-            </div>
+            <!-- Contêiner único para alinhar corretamente -->
+            <div class="service-container">
+                <div class="service-card" onclick="window.location.href='services/Spa-Party.html'">
+                    <img src="img/serviços/spa party.webp" class="service-img" alt="Spa Party" loading="lazy">
+                    <p class="service-title">Spa Party</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico2.html'">
-                <img src="img/serviços/Pintura de rosto.webp" class="service-img" alt="Pintura de Rosto" loading="lazy">
-                <p class="service-title">Pintura de Rosto</p>
-            </div>
+                <div class="service-card" onclick="window.location.href='services/Recreacao-Personalizada.html'">
+                    <img src="img/serviços/recreacao4.webp" class="service-img" alt="Pic Nic" loading="lazy">
+                    <p class="service-title">Recreação Personalizada</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico3.html'">
-                <img src="img/serviços/Camarin1.webp" class="service-img" alt="Camarim Fashion" loading="lazy">
-                <p class="service-title">Camarim Fashion</p>
-            </div>
+                <div class="service-card" onclick="window.location.href='services/Pintura-de-Rosto.html'">
+                    <img src="img/serviços/Pintura de rosto.webp" class="service-img" alt="Pintura de Rosto"
+                        loading="lazy">
+                    <p class="service-title">Pintura de Rosto</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico4.html'">
-                <img src="img/serviços/oficinas.webp" class="service-img" alt="Oficinas" loading="lazy">
-                <p class="service-title">Oficinas criativas</p>
-            </div>
+                <div class="service-card" onclick="window.location.href='services/Camarim-Fashion.html'">
+                    <img src="img/serviços/Camarin1.webp" class="service-img" alt="Camarim Fashion" loading="lazy">
+                    <p class="service-title">Camarim Fashion</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico5.html'">
-                <img src="img/serviços/noitePijama.webp" class="service-img" alt="Noite de Pijama" loading="lazy">
-                <p class="service-title">Noite do Pijama</p>
-            </div>
+                <div class="service-card" onclick="window.location.href='services/Oficinas.html'">
+                    <img src="img/serviços/oficinas.webp" class="service-img" alt="Oficinas" loading="lazy">
+                    <p class="service-title">Oficinas criativas</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico6.html'">
-                <img src="img/serviços/chaAmigas.webp" class="service-img" alt="Chá das Amigas" loading="lazy">
-                <p class="service-title">Chá das Amigas</p>
-            </div>
+                <div class="service-card" onclick="window.location.href='services/Noite-do-Pijama.html'">
+                    <img src="img/serviços/noitePijama.webp" class="service-img" alt="Noite de Pijama" loading="lazy">
+                    <p class="service-title">Noite do Pijama</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico7.html'">
-                <img src="img/serviços/clubeMeninos.webp" class="service-img" alt="Clube dos Meninos" loading="lazy">
-                <p class="service-title">Clube dos Meninos</p>
-            </div>
+                <div class="service-card" onclick="window.location.href='services/ChaDasAmigas.html'">
+                    <img src="img/serviços/chaAmigas.webp" class="service-img" alt="Chá das Amigas" loading="lazy">
+                    <p class="service-title">Chá das Amigas</p>
+                </div>
 
-            <div class="service-card" onclick="window.location.href='services/servico9.html'">
-                <img src="img/serviços/picNic.webp" class="service-img" alt="PicNic" loading="lazy">
-                <p class="service-title">Picnic</p>
-            </div>
-            <div class="service-card" onclick="window.location.href='services/servico10.html'">
-                <img src="img/serviços/pinturaGesta.webp" class="service-img" alt="pinturaGes" loading="lazy">
-                <p class="service-title">Pintura Gestacional</p>
+                <div class="service-card" onclick="window.location.href='services/Clube-dos-Meninos.html'">
+                    <img src="img/serviços/clubeMeninos.webp" class="service-img" alt="Clube dos Meninos"
+                        loading="lazy">
+                    <p class="service-title">Clube dos Meninos</p>
+                </div>
+
+                <div class="service-card" onclick="window.location.href='services/Picnic.html'">
+                    <img src="img/serviços/picNic.webp" class="service-img" alt="PicNic" loading="lazy">
+                    <p class="service-title">Picnic</p>
+                </div>
+                <div class="service-card" onclick="window.location.href='services/Pintura-Gestacional.html'">
+                    <img src="img/serviços/pinturaGesta.webp" class="service-img" alt="pinturaGes" loading="lazy">
+                    <p class="service-title">Pintura Gestacional</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Sobre -->
     <section id="sobre" class="py-5">
@@ -217,107 +228,116 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Sobre Nós</h2>
-                    <p> <h4> A Pincel Mágico Animações nasceu em 2021 por Geovanna Soares e em pouco tempo expandimos, 
-                        nos tornamos referência em Pintura Facial Infantil e Spa Party em Brasília, trazendo uma 
-                        alta qualidade de atendimento e entrega no evento. 
+                    <p>
+                    <h4> A Pincel Mágico Animações nasceu em 2021 por Geovanna Soares e em pouco tempo expandimos,
+                        nos tornamos referência em Pintura Facial Infantil e Spa Party em Brasília, trazendo uma
+                        alta qualidade de atendimento e entrega no evento.
 
-                        <p> <h4> Nossa missão: Trazer a mágia da infância com as melhores ferramentas para cada criança.</h4></p>
-                        
-                        <p> <h4> Visão: Ser referência em entreterimento saudável e festas de alto nível.</h4></p>
-                        
-                        <p> <h4> Valores: Transparência, respeito entre equipe e aos clientes, valorização da infância, 
-                        valorização dos agentes lúdicos.</h4></p>
-                       </h4>
+                        <p>
+                        <h4> Nossa missão: Trazer a mágia da infância com as melhores ferramentas para cada criança.
+                        </h4>
+                        </p>
+
+                        <p>
+                        <h4> Visão: Ser referência em entreterimento saudável e festas de alto nível.</h4>
+                        </p>
+
+                        <p>
+                        <h4> Valores: Transparência, respeito entre equipe e aos clientes, valorização da infância,
+                            valorização dos agentes lúdicos.</h4>
+                        </p>
+                    </h4>
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    
-<!-- Seção de Portfólio -->
-<section id="portfolio" class="portfolio-section">
-    <div class="container">
-        <h2 class="text-center mb-4">Veja nossa diversão em ação!</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item"><img src="img/portfolio/foto1.webp" alt="Projeto 1" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto2.webp" alt="Projeto 2" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto3.webp" alt="Projeto 3" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto5.webp" alt="Projeto 4" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto6.webp" alt="Projeto 5" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto7.webp" alt="Projeto 6" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto8.webp" alt="Projeto 7" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto9.webp" alt="Projeto 8" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/10.webp" alt="Projeto 9" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto11.webp" alt="Projeto 10" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto12.webp" alt="Projeto 11" loading="lazy"></div>
-            <div class="portfolio-item"><img src="img/portfolio/foto13.webp" alt="Projeto 12" loading="lazy"></div>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Veja nossa diversão em ação!</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item"><img src="img/portfolio/foto1.webp" alt="Projeto 1" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto2.webp" alt="Projeto 2" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto3.webp" alt="Projeto 3" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto5.webp" alt="Projeto 4" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto6.webp" alt="Projeto 5" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto7.webp" alt="Projeto 6" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto8.webp" alt="Projeto 7" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto9.webp" alt="Projeto 8" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/10.webp" alt="Projeto 9" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto11.webp" alt="Projeto 10" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto12.webp" alt="Projeto 11" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto13.webp" alt="Projeto 12" loading="lazy"></div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seção Contatos -->
-<section id="contato" class="contact-section">
-    <div class="container">
-        
-        <!-- Grade para dividir corretamente em 4 partes -->
-        <div class="contact-grid">
-            
-            <!-- Primeira Parte: "Nos Contrate!" (Maior) -->
-            <div class="contact-left">
-                <h2 class="section-title">Deixe a diversão por nossa conta!</h2>
-                <p class="section-texto">Entre em contato para saber mais sobre nossos serviços.</p>
-                <a href="https://wa.me/+5561981573718" class="btn btn-whatsapp" target="_blank">
-                    <i class="bi bi-whatsapp"></i> Fale Conosco
-                </a>
-            </div>
+    <!-- Seção Contatos -->
+    <section id="contato" class="contact-section">
+        <div class="container">
 
-            <!-- Segunda Parte: Trabalhe Conosco -->
-            <div class="work-section">
-                <h3 class="work-title">Faça parte da nossa equipe!</h3>
-                <p class="section-description">Estamos sempre à procura de pessoas criativas e apaixonadas pela diversão. Envie seu currículo para:</p>
-                <a href="https://chat.whatsapp.com/HiojSriAKWsKW42EzWwFMc" class="email-link">
-                    <i class="bi bi-whatsapp"></i> quero me candidatar 
-                </a>
-            </div>
+            <!-- Grade para dividir corretamente em 4 partes -->
+            <div class="contact-grid">
 
-            <!-- Terceira Parte: Redes Sociais -->
-            <div class="social-section">
-                <h3 class="work-title">Siga-nos nas redes sociais:</h3>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/pincelmagicoanimacoes" class="social-link" target="_blank">
-                        <i class="bi bi-instagram"></i> Instagram
-                    </a>
-                    <a href="https://wa.me/+5561981573718" class="social-link" target="_blank">
-                        <i class="bi bi-whatsapp"></i> WhatsApp
+                <!-- Primeira Parte: "Nos Contrate!" (Maior) -->
+                <div class="contact-left">
+                    <h2 class="section-title">Deixe a diversão por nossa conta!</h2>
+                    <p class="section-texto">Entre em contato para saber mais sobre nossos serviços.</p>
+                    <a href="https://wa.me/+5561981573718" class="btn btn-whatsapp" target="_blank">
+                        <i class="bi bi-whatsapp"></i> Fale Conosco
                     </a>
                 </div>
-            </div>
 
-            <!-- Quarta Parte: Informações da Empresa -->
-            <div class="company-info">
-                <h3 class="work-title">PINCEL MÁGICO LTDA</h3>
-                <p>CNPJ: 47.159.578/0001-59</p>
-                <p>Representante Legal: Geovanna Soares Costa</p>
-                <p>Telefone de contato: (61) 98157-3718</p>
-            </div>
+                <!-- Segunda Parte: Trabalhe Conosco -->
+                <div class="work-section">
+                    <h3 class="work-title">Faça parte da nossa equipe!</h3>
+                    <p class="section-description">Estamos sempre à procura de pessoas criativas e apaixonadas pela
+                        diversão. Envie seu currículo para:</p>
+                    <a href="https://chat.whatsapp.com/HiojSriAKWsKW42EzWwFMc" class="email-link">
+                        <i class="bi bi-whatsapp"></i> quero me candidatar
+                    </a>
+                </div>
 
+                <!-- Terceira Parte: Redes Sociais -->
+                <div class="social-section">
+                    <h3 class="work-title">Siga-nos nas redes sociais:</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pincelmagicoanimacoes" class="social-link" target="_blank">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                        <a href="https://wa.me/+5561981573718" class="social-link" target="_blank">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quarta Parte: Informações da Empresa -->
+                <div class="company-info">
+                    <h3 class="work-title">PINCEL MÁGICO LTDA</h3>
+                    <p>CNPJ: 47.159.578/0001-59</p>
+                    <p>Representante Legal: Geovanna Soares Costa</p>
+                    <p>Telefone de contato: (61) 98157-3718</p>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Bootstrap Icons (se ainda não estiver carregado no projeto) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Bootstrap Icons (se ainda não estiver carregado no projeto) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/+5561981573718" class="whatsapp-float" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" height="60">
-</a>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+5561981573718" class="whatsapp-float" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" height="60">
+    </a>
 
-<!-- Rodape -->
-<footer id="contato" class="bg-light text-center py-4">
-    <p>© 2025 Pincel Mágico | Todos os direitos reservados.</p>
-</footer>
+    <!-- Rodape -->
+    <footer id="contato" class="bg-light text-center py-4">
+        <p>© 2025 Pincel Mágico | Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
