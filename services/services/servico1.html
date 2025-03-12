@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincel Mágico Animações </title>
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="../css/serv2.css">
+
+    <!-- Favicons -->
+    <link href="../img/favicon.ico" rel="icon">
+    <link href="../img/android-chrome-192x192.webp" rel="apple-touch-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar Fixa -->
+    <nav class="service-navbar">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../img/png-Pincel.webp" alt="Pincel Mágico" class="navbar-logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Seção de Serviços -->
+<section id="servicos" class="container">
+
+    <div class="section">
+        <img src="../img/ser-fotos/spa party/capa.webp" alt="Imagem 1">
+        <div class="text">Spa Party
+        <p class="description">Um momento especial para as pequenas se sentirem únicas! No Spa Party, 
+            cada criança desfruta de um dia de beleza e diversão com muito carinho e alegria. 
+            Com atividades encantadoras, cuidados personalizados e uma atmosfera mágica, 
+            proporcionamos uma experiência inesquecível para celebrar momentos especiais</p>
+        </div>
+    </div>
+    <div class="section reverse">
+        <img src="../img/ser-fotos/spa party/SpaSkinCare.webp" alt="Imagem 2">
+        <img src="../img/ser-fotos/spa party/SpaSkinCare2.webp" alt="Imagem 2">
+        <div class="text">Skin Care</div>
+    </div>
+    <div class="section">
+        <img src="../img/ser-fotos/spa party/SpaCamarin1.webp" alt="Imagem 3">
+        <img src="../img/ser-fotos/spa party/camarim.webp" alt="Imagem 3">
+        <div class="text">Camarim</div>
+    </div>
+    <div class="section reverse">
+        <img src="../img/ser-fotos/spa party/SpaMassagem.webp" alt="Imagem 4">
+        <div class="text">Massagem</div>
+    </div>
+    <div class="section">
+        <img src="../img/ser-fotos/spa party/escalda1.webp" alt="Imagem 4">
+        <img src="../img/ser-fotos/spa party/escalda2.webp" alt="Imagem 4">
+        <div class="text"><H2>Escalda</H2></div>
+    </div>
+    <div class="section reverse">
+        <img src="../img/ser-fotos/spa party/Oficina1.webp" alt="Imagem 4">
+        <img src="../img/ser-fotos/spa party/Oficina2.webp" alt="Imagem 4">
+        <div class="text"><H2>Oficina</H2></div>
+    </div>
+    <div class="section">
+        <img src="../img/ser-fotos/spa party/SpaBrinde3.webp" alt="Imagem 4">
+        <img src="../img/ser-fotos/spa party/SpaBrinde2.webp" alt="Imagem 4">
+        <div class="text"><H2>Brinde</H2></div>
+    </div>
+
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+5561981573718" class="whatsapp-float" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" height="60">
+    </a>
+
+
+</section>
+    <footer class="footer">
+        © 2025 Pincel Mágico | Todos os direitos reservados.
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const serviceCards = document.querySelectorAll(".service-page-card");
+            const images = document.querySelectorAll(".service-page-gallery-item");
+            const descriptionBox = document.getElementById("service-description");
+    
+            serviceCards.forEach(card => {
+                card.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const filter = card.getAttribute("data-filter");
+                    const description = card.getAttribute("data-description");
+    
+                    // Atualiza o texto explicativo
+                    descriptionBox.style.opacity = "0"; // Efeito suave
+                    setTimeout(() => {
+                        descriptionBox.textContent = description;
+                        descriptionBox.style.opacity = "1";
+                    }, 300);
+    
+                    // Remove classe ativa de todos os botões e adiciona no selecionado
+                    serviceCards.forEach(btn => btn.classList.remove("active"));
+                    card.classList.add("active");
+    
+                    // Mostrar imagens do filtro escolhido
+                    images.forEach(img => {
+                        img.classList.toggle("active", filter === "all" || img.getAttribute("data-filter") === filter);
+                    });
+                });
+            });
+    
+            // Ativar "Todos" por padrão
+            document.querySelector(".service-page-card[data-filter='all']").click();
+        });
+    </script>
+    
+</body>
+</html>
