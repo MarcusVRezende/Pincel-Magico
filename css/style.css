@@ -91,8 +91,6 @@ body {
     position: relative;
 }
 
-
-
 .navbar-toggler {
     border: none !important; /* Remove qualquer borda extra */
     box-shadow: none !important; /* Remove sombras extras */
@@ -557,10 +555,19 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     background-color: #313131;
-    padding: 8px 15px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s, transform 0.2s;
 
+
+    display: inline-block;
+    max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+    text-align: center;
+    margin: 10px auto; /* Centraliza */
+    padding: 8px 15px; /* Ajusta padding */
+    font-size: 0.8rem; /* Diminui o tamanho da fonte */
+    white-space: normal; /* Permite quebra de linha para evitar cortes */
+    word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */   
 }
 
 .email-link:hover {
@@ -724,7 +731,6 @@ html, body {
 
     }
 }
-
 /* Botão flutuante do WhatsApp */
 .whatsapp-float {
     position: fixed;
