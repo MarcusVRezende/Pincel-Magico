@@ -12,7 +12,8 @@ body {
     padding: 0;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     font-family: 'Bubblegum Sans', cursive;
     color: #F2C12E !important;
 }
@@ -58,7 +59,8 @@ body {
     background: none;
     padding: 5px;
     outline: none;
-    z-index: 1100}
+    z-index: 1100
+}
 
 /* Garante que o menu não empurra o botão */
 .navbar-collapse {
@@ -67,7 +69,8 @@ body {
     left: 0;
     width: 100%;
     background: white;
-    box-shadow: none; /* Removendo sombra quando o menu está fechado */
+    box-shadow: none;
+    /* Removendo sombra quando o menu está fechado */
     transition: all 0.3s ease-in-out;
     z-index: 999;
 }
@@ -92,10 +95,14 @@ body {
 }
 
 .navbar-toggler {
-    border: none !important; /* Remove qualquer borda extra */
-    box-shadow: none !important; /* Remove sombras extras */
-    outline: none !important; /* Remove contornos */
-    background: none !important; /* Remove qualquer fundo */
+    border: none !important;
+    /* Remove qualquer borda extra */
+    box-shadow: none !important;
+    /* Remove sombras extras */
+    outline: none !important;
+    /* Remove contornos */
+    background: none !important;
+    /* Remove qualquer fundo */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +113,8 @@ body {
 .navbar-toggler-icon {
     width: 30px;
     height: 3px;
-    background-color: #000000; /* Mantém a cor amarela */
+    background-color: #000000;
+    /* Mantém a cor amarela */
     position: relative;
     display: block;
     transition: all 0.3s ease-in-out;
@@ -127,7 +135,8 @@ body {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #000000; /* Amarelo igual às outras linhas */
+    background-color: #000000;
+    /* Amarelo igual às outras linhas */
     position: absolute;
 }
 
@@ -141,7 +150,8 @@ body {
 
 /* Remove o traço do meio ao abrir o menu */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background: none !important; /* Remove a linha do meio */
+    background: none !important;
+    /* Remove a linha do meio */
 }
 
 .navbar-toggler {
@@ -169,34 +179,44 @@ body {
     .navbar {
         padding: 10px 20px;
     }
+
     .navbar-nav {
-        padding-left: 20px !important; /* Puxa os textos um pouco para dentro */
+        padding-left: 20px !important;
+        /* Puxa os textos um pouco para dentro */
     }
 
     .nav-link {
-        padding-left: 10px !important; /* Ajusta mais o espaçamento */
-        text-align: left; /* Garante que o texto fica alinhado corretamente */
+        padding-left: 10px !important;
+        /* Ajusta mais o espaçamento */
+        text-align: left;
+        /* Garante que o texto fica alinhado corretamente */
     }
 }
 
 .brand-text h1 {
-    font-size: 33s px; /* Reduz o tamanho do título */
-    margin: 0; /* Remove espaçamentos extras */
+    font-size: 33s px;
+    /* Reduz o tamanho do título */
+    margin: 0;
+    /* Remove espaçamentos extras */
 }
 
 /* 📱 Ajuste para mobile pequeno */
 @media (max-width: 576px) {
     .brand-text h1 {
-        font-size: 20px; /* Reduz o tamanho do título */
-        margin: 0; /* Remove espaçamentos extras */
+        font-size: 20px;
+        /* Reduz o tamanho do título */
+        margin: 0;
+        /* Remove espaçamentos extras */
     }
 
     .navbar-brand {
-        font-size: 16px; /* Reduzindo o tamanho da fonte */
+        font-size: 16px;
+        /* Reduzindo o tamanho da fonte */
     }
 
     .navbar-brand img {
-        height: 30px; /* Reduzindo o tamanho da logo */
+        height: 30px;
+        /* Reduzindo o tamanho da logo */
         width: auto;
     }
 }
@@ -233,28 +253,45 @@ body {
 
 @media (max-width: 992px) {
     .carousel-item img {
-        height: 90vh; /* Mantém o tamanho grande para tablets */
+        height: 90vh;
+        /* Mantém o tamanho grande para tablets */
     }
 }
 
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 80vh; /* Aumenta a altura para ocupar mais a tela no mobile */
+        height: 80vh;
+        /* Aumenta a altura para ocupar mais a tela no mobile */
     }
 }
 
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 70vh; /* Ocupa toda a tela em celulares menores */
+        height: 70vh;
+        /* Ocupa toda a tela em celulares menores */
     }
 }
 
 /* Ajustes específicos para cada imagem */
-.carousel-item:nth-child(1) img { object-position: center 59%; }
-.carousel-item:nth-child(2) img { object-position: center 20%; }
-.carousel-item:nth-child(3) img { object-position: center 20%; }
-.carousel-item:nth-child(4) img { object-position: center; }
-.carousel-item:nth-child(5) img { object-position: center 30%; }
+.carousel-item:nth-child(1) img {
+    object-position: center 59%;
+}
+
+.carousel-item:nth-child(2) img {
+    object-position: center 20%;
+}
+
+.carousel-item:nth-child(3) img {
+    object-position: center 20%;
+}
+
+.carousel-item:nth-child(4) img {
+    object-position: center;
+}
+
+.carousel-item:nth-child(5) img {
+    object-position: center 30%;
+}
 
 
 /* Serviços */
@@ -289,7 +326,8 @@ body {
 
 /* Imagem do Serviço */
 .service-img {
-    width: 130px; /* Reduzindo um pouco para evitar sobreposição */
+    width: 130px;
+    /* Reduzindo um pouco para evitar sobreposição */
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
@@ -306,7 +344,8 @@ body {
 /* Título do Serviço */
 .service-title {
     font-family: 'Fredoka One', cursive;
-    font-size: 1.1rem; /* Ajustando para telas menores */
+    font-size: 1.1rem;
+    /* Ajustando para telas menores */
     font-weight: bold;
     color: #26A6A6;
     text-align: center;
@@ -320,12 +359,15 @@ body {
         grid-template-columns: repeat(5, 1fr);
         gap: 10px;
     }
+
     .navbar-collapse {
         position: relative;
         background: none;
         box-shadow: none;
-        display: flex !important; /* Garante que o menu aparece no desktop */
+        display: flex !important;
+        /* Garante que o menu aparece no desktop */
     }
+
     .navbar {
         position: fixed;
         top: 0;
@@ -349,21 +391,30 @@ body {
 @media (max-width: 576px) {
     .service-container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Garantindo tamanho mínimo */
-        gap: 5px; /* Reduzindo espaçamento para não sobrepor */
+        grid-template-columns: repeat(3, minmax(80px, 1fr));
+        /* Garantindo tamanho mínimo */
+        gap: 5px;
+        /* Reduzindo espaçamento para não sobrepor */
     }
+
     .service-card {
-        width: auto; /* Evita que quebre o layout */
+        width: auto;
+        /* Evita que quebre o layout */
         padding: 5px;
     }
+
     .service-img {
-        width: 100px; /* Reduzindo tamanho da imagem */
+        width: 100px;
+        /* Reduzindo tamanho da imagem */
         height: 100px;
     }
+
     .service-title {
-        font-size: 0.9rem; /* Ajustando fonte menor */
+        font-size: 0.9rem;
+        /* Ajustando fonte menor */
     }
 }
+
 /* 📱 Mobile Pequeno - Centralizar o último item quando não houver par */
 @media (max-width: 576px) {
     .service-card:nth-last-child(1):nth-child(3n + 1) {
@@ -371,9 +422,12 @@ body {
         justify-self: center;
     }
 }
-html, body {
+
+html,
+body {
     max-width: 100%;
-    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-x: hidden;
+    /* Impede rolagem horizontal */
 }
 
 /* Sobre */
@@ -403,14 +457,17 @@ html, body {
 /* Seção de Portfólio */
 .portfolio-section {
     padding: 50px 0;
-    background-color: #f8f9fa; /* Fundo suave */
+    background-color: #f8f9fa;
+    /* Fundo suave */
 }
 
 /* Grid do Portfólio */
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 imagens por linha */
-    gap: 5px; /* Pequeno espaçamento entre imagens */
+    grid-template-columns: repeat(4, 1fr);
+    /* Desktop: 4 imagens por linha */
+    gap: 5px;
+    /* Pequeno espaçamento entre imagens */
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -424,14 +481,17 @@ html, body {
 
 .portfolio-item img {
     width: 100%;
-    height: 200px; /* Mantém o tamanho uniforme */
-    object-fit: cover; /* Mantém a proporção correta */
+    height: 200px;
+    /* Mantém o tamanho uniforme */
+    object-fit: cover;
+    /* Mantém a proporção correta */
     transition: transform 0.3s ease-in-out;
 }
 
 /* Efeito ao passar o mouse */
 .portfolio-item:hover img {
-    transform: scale(1.05); /* Zoom suave */
+    transform: scale(1.05);
+    /* Zoom suave */
 }
 
 /* 📌 Tablet - 3 imagens por linha */
@@ -450,7 +510,8 @@ html, body {
 
 @media (max-width: 480px) {
     .portfolio-container {
-        grid-template-columns: repeat(3, 1fr); /* Mantendo 3 imagens por linha também em celulares pequenos */
+        grid-template-columns: repeat(3, 1fr);
+        /* Mantendo 3 imagens por linha também em celulares pequenos */
     }
 }
 
@@ -463,14 +524,23 @@ html, body {
 
 /* Efeito de cor alternada no título */
 @keyframes colorSwap {
-    0% { color: #fb80b3; }
-    50% { color: #c6f6ff; }
-    100% { color: #fb80b3; }
+    0% {
+        color: #fb80b3;
+    }
+
+    50% {
+        color: #c6f6ff;
+    }
+
+    100% {
+        color: #fb80b3;
+    }
 }
 
 /* Destacar "Deixe a diversão por nossa conta!" */
 .section-title {
-    font-size: 3rem; /* Aumentei ainda mais */
+    font-size: 3rem;
+    /* Aumentei ainda mais */
     font-weight: bold;
     font-family: 'Fredoka One', cursive;
     animation: colorSwap 3s infinite alternate;
@@ -481,7 +551,8 @@ html, body {
 /* Organização correta da grade */
 .contact-grid {
     display: grid;
-    grid-template-columns: 4fr 1.5fr 1.5fr 1.5fr; /* Aumentei a área do primeiro bloco */
+    grid-template-columns: 4fr 1.5fr 1.5fr 1.5fr;
+    /* Aumentei a área do primeiro bloco */
     gap: 20px;
     align-items: center;
     max-width: 1200px;
@@ -490,12 +561,12 @@ html, body {
 }
 
 /* Adicionando barras laterais entre os elementos */
-.contact-grid > div {
+.contact-grid>div {
     position: relative;
     padding: 20px;
 }
 
-.contact-grid > div:not(:first-child)::before {
+.contact-grid>div:not(:first-child)::before {
     content: "";
     position: absolute;
     left: -12px;
@@ -508,7 +579,8 @@ html, body {
 /* Ajustando cada seção */
 .contact-left {
     text-align: center;
-    padding: 0 50px; /* Adicionei espaçamento lateral */
+    padding: 0 50px;
+    /* Adicionei espaçamento lateral */
 }
 
 /* Redimensionar os textos para ficarem uniformes */
@@ -521,11 +593,13 @@ html, body {
 /* Diminuição do texto do CNPJ */
 .company-info {
     text-align: left;
-    font-size: 0.85rem; /* Texto menor */
+    font-size: 0.85rem;
+    /* Texto menor */
 }
 
 .company-info h3 {
-    font-size: 1rem; /* Mantendo o nome maior */
+    font-size: 1rem;
+    /* Mantendo o nome maior */
 }
 
 /* Botão do WhatsApp */
@@ -536,7 +610,8 @@ html, body {
     background-color: #25D366;
     color: #fff;
     padding: 14px 28px;
-    font-size: 1.3rem; /* Deixei o botão mais chamativo */
+    font-size: 1.3rem;
+    /* Deixei o botão mais chamativo */
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
@@ -561,13 +636,19 @@ html, body {
 
 
     display: inline-block;
-    max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+    max-width: 100%;
+    /* Evita que a caixa ultrapasse a tela */
     text-align: center;
-    margin: 10px auto; /* Centraliza */
-    padding: 8px 15px; /* Ajusta padding */
-    font-size: 0.8rem; /* Diminui o tamanho da fonte */
-    white-space: normal; /* Permite quebra de linha para evitar cortes */
-    word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */   
+    margin: 10px auto;
+    /* Centraliza */
+    padding: 8px 15px;
+    /* Ajusta padding */
+    font-size: 0.8rem;
+    /* Diminui o tamanho da fonte */
+    white-space: normal;
+    /* Permite quebra de linha para evitar cortes */
+    word-break: break-word;
+    /* Garante que o texto se ajuste dentro da caixa */
 }
 
 .email-link:hover {
@@ -609,20 +690,22 @@ html, body {
 @media (max-width: 768px) {
     .contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Mantém duas colunas para alinhamento correto */
+        grid-template-columns: 1fr 1fr;
+        /* Mantém duas colunas para alinhamento correto */
         gap: 15px;
         text-align: center;
         position: relative;
     }
 
-    .contact-grid > div {
+    .contact-grid>div {
         padding: 15px;
         position: relative;
     }
 
     /* "Deixe a diversão por nossa conta!" ocupa toda a largura */
     .contact-left {
-        grid-column: span 2; /* Ocupa as duas colunas */
+        grid-column: span 2;
+        /* Ocupa as duas colunas */
     }
 
     /* Mantém APENAS a barra entre "Venha fazer parte da nossa equipe!" e "Siga-nos nas redes sociais" */
@@ -641,7 +724,7 @@ html, body {
     }
 
     /* REMOVE TODAS AS OUTRAS BARRAS */
-    .contact-grid > div::before {
+    .contact-grid>div::before {
         display: none !important;
     }
 
@@ -652,7 +735,8 @@ html, body {
         text-align: center;
     }
 }
-    @media (max-width: 480px) {
+
+@media (max-width: 480px) {
 
 
     .contact-grid {
@@ -663,12 +747,14 @@ html, body {
     }
 
     .contact-left {
-        grid-column: span 2; /* Mantém "Deixe a diversão por nossa conta!" ocupando toda a largura */
+        grid-column: span 2;
+        /* Mantém "Deixe a diversão por nossa conta!" ocupando toda a largura */
     }
 
     .work-section,
     .social-section {
-        font-size: 0.9rem; /* Diminui um pouco os textos */
+        font-size: 0.9rem;
+        /* Diminui um pouco os textos */
     }
 
     /* Mantém a única barra entre "Venha fazer parte da nossa equipe!" e "Siga-nos nas redes sociais" */
@@ -686,7 +772,8 @@ html, body {
     /* Reduz o tamanho do texto do bloco final "PINCEL MÁGICO LTDA" */
     .company-info {
         font-size: 0.75rem;
-        grid-column: span 2; /* Mantém ocupando toda a largura */
+        grid-column: span 2;
+        /* Mantém ocupando toda a largura */
     }
 
     .email-link {
@@ -697,40 +784,55 @@ html, body {
         background-color: #313131;
         border-radius: 8px;
         transition: background-color 0.3s, transform 0.2s;
-    
+
 
         display: inline-block;
-        max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+        max-width: 100%;
+        /* Evita que a caixa ultrapasse a tela */
         text-align: center;
-        margin: 10px auto; /* Centraliza */
-        padding: 5px 10px; /* Ajusta padding */
-        font-size: 0.8rem; /* Diminui o tamanho da fonte */
-        white-space: normal; /* Permite quebra de linha para evitar cortes */
-        word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+        margin: 10px auto;
+        /* Centraliza */
+        padding: 5px 10px;
+        /* Ajusta padding */
+        font-size: 0.8rem;
+        /* Diminui o tamanho da fonte */
+        white-space: normal;
+        /* Permite quebra de linha para evitar cortes */
+        word-break: break-word;
+        /* Garante que o texto se ajuste dentro da caixa */
     }
-    .section-texto{
+
+    .section-texto {
         font-size: 0.9rem;
         color: #fff;
-    
-        max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+
+        max-width: 100%;
+        /* Evita que a caixa ultrapasse a tela */
         text-align: center;
-        font-size: 0.8rem; /* Diminui o tamanho da fonte */
-        word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+        font-size: 0.8rem;
+        /* Diminui o tamanho da fonte */
+        word-break: break-word;
+        /* Garante que o texto se ajuste dentro da caixa */
 
 
 
     }
+
     .section-description {
         font-size: 0.9rem;
         color: #fff;
-    
-        max-width: 100%; /* Evita que a caixa ultrapasse a tela */
+
+        max-width: 100%;
+        /* Evita que a caixa ultrapasse a tela */
         text-align: left;
-        font-size: 0.8rem; /* Diminui o tamanho da fonte */
-        word-break: break-word; /* Garante que o texto se ajuste dentro da caixa */
+        font-size: 0.8rem;
+        /* Diminui o tamanho da fonte */
+        word-break: break-word;
+        /* Garante que o texto se ajuste dentro da caixa */
 
     }
 }
+
 /* Botão flutuante do WhatsApp */
 .whatsapp-float {
     position: fixed;
@@ -740,7 +842,7 @@ html, body {
     right: 20px;
     z-index: 100;
     border-radius: 50%;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     background-color: #25D366;
     display: flex;
     justify-content: center;
@@ -755,7 +857,7 @@ html, body {
 
 .whatsapp-float:hover {
     transform: scale(1.15);
-    box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Ajuste para Mobile */
@@ -766,22 +868,29 @@ html, body {
         bottom: 15px;
         right: 15px;
     }
-} 
+}
+
 @media (max-width: 480px) {
     .work-section::before {
         display: none !important;
     }
 }
+
 @media (max-width: 576px) {
     .navbar {
-        padding: 8px 15px; /* Reduz o padding */
+        padding: 8px 15px;
+        /* Reduz o padding */
     }
 
     .navbar-brand img {
-        height: 28px; /* Reduz logo */
+        height: 28px;
+        /* Reduz logo */
     }
 }
-html, body {
+
+html,
+body {
     max-width: 100%;
-    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-x: hidden;
+    /* Impede rolagem horizontal */
 }
