@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="../css/serv2.css">
+
+    <!-- Favicons -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://pincelmagicoanimacoes.com.br/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://pincelmagicoanimacoes.com.br/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="https://pincelmagicoanimacoes.com.br/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://pincelmagicoanimacoes.com.br/favicon.ico">
+
+    <!-- Logo para Google Search -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pincel Mágico Animações",
+    "url": "https://pincelmagicoanimacoes.com.br/",
+    "logo": "https://pincelmagicoanimacoes.com.br/img/logo.png"
+    }
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Picnic - Diversão ao Ar Livre para Crianças</title>
+
+    <meta name="description"
+        content="Um dia especial ao ar livre com brincadeiras, lanches deliciosos e muita diversão! O Picnic é a experiência perfeita para as crianças aproveitarem a natureza.">
+
+    <!-- Open Graph para redes sociais (Facebook, Instagram, WhatsApp) -->
+    <meta property="og:title" content="Picnic - Pincel Mágico Animações">
+    <meta property="og:description"
+        content="Brincadeiras ao ar livre, comidinhas deliciosas e momentos inesquecíveis! Nosso Picnic é diversão garantida para todas as idades.">
+    <meta property="og:image" content="https://pincelmagicoanimacoes.com.br/img/servicos-divulgacao/picNic.jpg">
+    <meta property="og:url" content="https://pincelmagicoanimacoes.com.br/services/Picnic.html">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Picnic - Pincel Mágico">
+    <meta name="twitter:description"
+        content="Um dia ao ar livre cheio de brincadeiras, risadas e comidinhas especiais! O Picnic é diversão garantida para crianças.">
+    <meta name="twitter:image" content="https://pincelmagicoanimacoes.com.br/img/servicos-divulgacao/picNic.jpg">
+
+    <!-- Palavras-chave -->
+    <meta name="keywords"
+        content="Picnic, evento ao ar livre, brincadeiras infantis, lanche para crianças, diversão, festas temáticas, Pincel Mágico">
+    <meta name="author" content="Pincel Mágico">
+    <meta name="robots" content="index, follow">
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar Fixa -->
+    <nav class="service-navbar">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../img/png-Pincel.webp" alt="Pincel Mágico" class="navbar-logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="container">
+        <div class="section">
+            <!-- Vídeo configurado para iniciar automaticamente sem som -->
+            <video id="spaVideo" autoplay muted loop controls style="width: 100%; height: auto;">
+                <source src="../img/videos/picnic.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="text">Picnic
+                <p class="description">
+                    Brincadeiras, lanches deliciosos e momentos inesquecíveis em meio à
+                    natureza!
+                </p>
+            </div>
+        </div>
+        <div class="personalizacao-gallery">
+            <div class="text">
+                <div class="image-gallery">
+                    <img src="../img/ser-fotos/picnic/picnic3.jpg" alt="Imagem 1">
+                    <img src="../img/ser-fotos/picnic/picnic.jpg" alt="Imagem 2">
+                    <img src="../img/ser-fotos/picnic/picnic2.jpg" alt="Imagem 3">
+                    <img src="../img/ser-fotos/picnic/picnic4.jpg" alt="Imagem 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/+5561981573718" class="whatsapp-float" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" height="60">
+        </a>
+
+    </section>
+    <footer class="footer">
+        © 2025 Pincel Mágico | Todos os direitos reservados.
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const serviceCards = document.querySelectorAll(".service-page-card");
+            const images = document.querySelectorAll(".service-page-gallery-item");
+            const descriptionBox = document.getElementById("service-description");
+
+            serviceCards.forEach(card => {
+                card.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const filter = card.getAttribute("data-filter");
+                    const description = card.getAttribute("data-description");
+
+                    // Atualiza o texto explicativo
+                    descriptionBox.style.opacity = "0"; // Efeito suave
+                    setTimeout(() => {
+                        descriptionBox.textContent = description;
+                        descriptionBox.style.opacity = "1";
+                    }, 300);
+
+                    // Remove classe ativa de todos os botões e adiciona no selecionado
+                    serviceCards.forEach(btn => btn.classList.remove("active"));
+                    card.classList.add("active");
+
+                    // Mostrar imagens do filtro escolhido
+                    images.forEach(img => {
+                        img.classList.toggle("active", filter === "all" || img.getAttribute("data-filter") === filter);
+                    });
+                });
+            });
+
+            // Ativar "Todos" por padrão
+            document.querySelector(".service-page-card[data-filter='all']").click();
+        });
+    </script>
+
+</body>
+
+</html>
