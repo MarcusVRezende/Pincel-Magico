@@ -127,9 +127,21 @@
             </div>
         </div>
     </nav>
-
-
+    
     <script>
+        document.getElementById("next").addEventListener("click", function () {
+            const carousel = document.querySelector(".imagem-carousel");
+            const firstItem = document.querySelector(".imagem-carousel-item");
+            carousel.appendChild(firstItem); // Move o primeiro item para o final
+        });
+
+        document.getElementById("prev").addEventListener("click", function () {
+            const carousel = document.querySelector(".imagem-carousel");
+            const lastItem = document.querySelector(".imagem-carousel-item:last-child");
+            carousel.insertBefore(lastItem, carousel.firstChild); // Move o último item para o início
+        });
+
+
         window.addEventListener('scroll', function () {
             let navbar = document.querySelector('.navbar');
             let logo = document.querySelector('.logo');
@@ -146,6 +158,7 @@
                 logo.style.height = '40px';
                 brandText.style.fontSize = '1rem';
             }
+
         });
     </script>
 
@@ -184,89 +197,94 @@
             <!-- Contêiner único para alinhar corretamente -->
             <div class="service-container">
                 <div class="service-card" onclick="window.location.href='services/Spa-Party.html'">
-                    <img src="img/serviços/spa party.webp" class="service-img" alt="Spa Party" loading="lazy">
+                    <img src="img/serviços/spa party.jpg" class="service-img" alt="Spa Party" loading="lazy">
                     <p class="service-title">Spa Party</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Recreacao-Personalizada.html'">
-                    <img src="img/serviços/recreacao4.webp" class="service-img" alt="Pic Nic" loading="lazy">
-                    <p class="service-title">Recreação Personalizada</p>
+                    <img src="img/serviços/recreacao4.jpg" class="service-img" alt="Pic Nic" loading="lazy">
+                    <p class="service-title">Recreação de festa</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Pintura-de-Rosto.html'">
-                    <img src="img/serviços/Pintura de rosto.webp" class="service-img" alt="Pintura de Rosto"
+                    <img src="img/serviços/Pintura de rosto.jpg" class="service-img" alt="Pintura de Rosto"
                         loading="lazy">
                     <p class="service-title">Pintura de Rosto</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Camarim-Fashion.html'">
-                    <img src="img/serviços/Camarin1.webp" class="service-img" alt="Camarim Fashion" loading="lazy">
+                    <img src="img/serviços/Camarin1.jpg" class="service-img" alt="Camarim Fashion" loading="lazy">
                     <p class="service-title">Camarim Fashion</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Oficinas-Criativas.html'">
-                    <img src="img/serviços/oficinas.webp" class="service-img" alt="Oficinas" loading="lazy">
+                    <img src="img/serviços/oficinas.jpg" class="service-img" alt="Oficinas" loading="lazy">
                     <p class="service-title">Oficinas criativas</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Noite-do-Pijama.html'">
-                    <img src="img/serviços/noitePijama.webp" class="service-img" alt="Noite de Pijama" loading="lazy">
+                    <img src="img/serviços/noitePijama.jpg" class="service-img" alt="Noite de Pijama" loading="lazy">
                     <p class="service-title">Noite do Pijama</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Cha-das-Amigas.html'">
-                    <img src="img/serviços/chaAmigas.webp" class="service-img" alt="Chá das Amigas" loading="lazy">
+                    <img src="img/serviços/chaAmigas.jpg" class="service-img" alt="Chá das Amigas" loading="lazy">
                     <p class="service-title">Chá das Amigas</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Clube-dos-Meninos.html'">
-                    <img src="img/serviços/clubeMeninos.webp" class="service-img" alt="Clube dos Meninos"
-                        loading="lazy">
+                    <img src="img/serviços/clubeMeninos.jpg" class="service-img" alt="Clube dos Meninos" loading="lazy">
                     <p class="service-title">Clube dos Meninos</p>
                 </div>
 
                 <div class="service-card" onclick="window.location.href='services/Picnic.html'">
-                    <img src="img/serviços/picNic.webp" class="service-img" alt="PicNic" loading="lazy">
+                    <img src="img/serviços/picNic.jpg" class="service-img" alt="PicNic" loading="lazy">
                     <p class="service-title">Picnic</p>
                 </div>
                 <div class="service-card" onclick="window.location.href='services/Pintura-Gestacional.html'">
-                    <img src="img/serviços/pinturaGesta.webp" class="service-img" alt="pinturaGes" loading="lazy">
+                    <img src="img/serviços/pinturaGesta.jpg" class="service-img" alt="pinturaGes" loading="lazy">
                     <p class="service-title">Pintura Gestacional</p>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Sobre -->
     <section id="sobre" class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="img/Historia.webp " class="sobre-img" alt="Sobre Nós" loading="lazy">
+                    <img src="img/sobre/sobre1.jpg" class="sobre-img" alt="Sobre Nós" loading="lazy">
                 </div>
                 <div class="col-md-6">
                     <h2>Sobre Nós</h2>
                     <p>
-                    <h4> A Pincel Mágico Animações nasceu em 2021 por Geovanna Soares e em pouco tempo expandimos,
-                        nos tornamos referência em Pintura Facial Infantil e Spa Party em Brasília, trazendo uma
-                        alta qualidade de atendimento e entrega no evento.
-
-                        <p>
-                        <h4> Nossa missão: Trazer a mágia da infância com as melhores ferramentas para cada criança.
-                        </h4>
-                        </p>
-
-                        <p>
-                        <h4> Visão: Ser referência em entreterimento saudável e festas de alto nível.</h4>
-                        </p>
-
-                        <p>
+                        <h4> A Pincel Mágico Animações nasceu em 2021 por Geovanna Soares e em pouco tempo expandimos,
+                            nos tornamos referência em Pintura Facial Infantil e Spa Party em Brasília, trazendo uma
+                            alta qualidade de atendimento e entrega no evento.</h4>
+                        <h4> Nossa missão: Trazer a mágia da infância com as melhores ferramentas para cada criança.</h4>
+                        <h4> Visão: Ser referência em entretenimento saudável e festas de alto nível.</h4>
                         <h4> Valores: Transparência, respeito entre equipe e aos clientes, valorização da infância,
                             valorização dos agentes lúdicos.</h4>
-                        </p>
-                    </h4>
                     </p>
                 </div>
+            </div>
+        </div>
+        <div class="imagem-carousel">
+            <div class="imagem-container">
+                <!-- Duplicando as imagens para um efeito contínuo -->
+                <img src="img/sobre/sobre1.jpg" alt="Imagem 1">
+                <img src="img/sobre/sobre3.jpg" alt="Imagem 3">
+                <img src="img/sobre/sobre4.jpg" alt="Imagem 4">
+                <img src="img/sobre/sobre5.jpg" alt="Imagem 5">
+                <img src="img/sobre/sobre6.jpg" alt="Imagem 6">
+                <!-- Duplicação das imagens para continuar o efeito de rolagem -->
+                <img src="img/sobre/sobre1.jpg" alt="Imagem 1">
+                <img src="img/sobre/sobre3.jpg" alt="Imagem 3">
+                <img src="img/sobre/sobre4.jpg" alt="Imagem 4">
+                <img src="img/sobre/sobre5.jpg" alt="Imagem 5">
+                <img src="img/sobre/sobre6.jpg" alt="Imagem 6">
             </div>
         </div>
     </section>
@@ -276,18 +294,30 @@
         <div class="container">
             <h2 class="text-center mb-4">Veja nossa diversão em ação!</h2>
             <div class="portfolio-container">
-                <div class="portfolio-item"><img src="img/portfolio/foto1.webp" alt="Projeto 1" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto2.webp" alt="Projeto 2" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto3.webp" alt="Projeto 3" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto5.webp" alt="Projeto 4" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto6.webp" alt="Projeto 5" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto7.webp" alt="Projeto 6" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto8.webp" alt="Projeto 7" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto9.webp" alt="Projeto 8" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/10.webp" alt="Projeto 9" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto11.webp" alt="Projeto 10" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto12.webp" alt="Projeto 11" loading="lazy"></div>
-                <div class="portfolio-item"><img src="img/portfolio/foto13.webp" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto1.jpg" alt="Projeto 1" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto2.jpg" alt="Projeto 2" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto3.jpg" alt="Projeto 3" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto4.jpg" alt="Projeto 3" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto5.jpg" alt="Projeto 4" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto6.jpg" alt="Projeto 5" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto7.jpg" alt="Projeto 6" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto8.jpg" alt="Projeto 7" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto9.jpg" alt="Projeto 8" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto10.jpg" alt="Projeto 9" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto11.jpg" alt="Projeto 10" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto12.jpg" alt="Projeto 11" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto13.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto14.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto15.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto16.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto17.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto18.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto19.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto20.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto21.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto22.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto23.jpg" alt="Projeto 12" loading="lazy"></div>
+                <div class="portfolio-item"><img src="img/portfolio/foto24.jpg" alt="Projeto 12" loading="lazy"></div>
             </div>
         </div>
     </section>
