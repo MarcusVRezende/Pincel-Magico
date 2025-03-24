@@ -333,9 +333,9 @@ body {
 
 /* Imagem do Serviço */
 .service-img {
-    width: 130px;
+    width: 155px;
     /* Reduzindo um pouco para evitar sobreposição */
-    height: 130px;
+    height: 155px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #26A6A6;
