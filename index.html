@@ -134,20 +134,6 @@
 
     <script>
 
-
-        document.getElementById("next").addEventListener("click", function () {
-            const carousel = document.querySelector(".imagem-carousel");
-            const firstItem = document.querySelector(".imagem-carousel-item");
-            carousel.appendChild(firstItem); // Move o primeiro item para o final
-        });
-
-        document.getElementById("prev").addEventListener("click", function () {
-            const carousel = document.querySelector(".imagem-carousel");
-            const lastItem = document.querySelector(".imagem-carousel-item:last-child");
-            carousel.insertBefore(lastItem, carousel.firstChild); // Move o último item para o início
-        });
-
-
         window.addEventListener('scroll', function () {
             let navbar = document.querySelector('.navbar');
             let logo = document.querySelector('.logo');
