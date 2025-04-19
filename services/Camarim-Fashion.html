@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="../css/serv2.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://pincelmagicoanimacoes.com.br/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://pincelmagicoanimacoes.com.br/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="https://pincelmagicoanimacoes.com.br/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://pincelmagicoanimacoes.com.br/favicon.ico">
+
+    <!-- Logo para Google Search -->
+    <script type="application/ld+json">
+   {
+   "@context": "https://schema.org",
+   "@type": "Organization",
+   "name": "Pincel Mágico Animações",
+   "url": "https://pincelmagicoanimacoes.com.br/",
+   "logo": "https://pincelmagicoanimacoes.com.br/img/logo.png"
+   }
+   </script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Camarim Fashion - Brilho e Estilo para Crianças</title>
+    <meta name="description"
+        content="Transforme qualquer festa em um desfile de moda! No Camarim Fashion, as crianças se divertem se maquiando, escolhendo looks incríveis e desfilando com muito estilo.">
+
+    <!-- Open Graph para redes sociais (Facebook, Instagram, WhatsApp) -->
+    <meta property="og:title" content="Camarim Fashion - Pincel Mágico Animações">
+    <meta property="og:description"
+        content="Brilho, moda e muita diversão! No Camarim Fashion, cada criança vira uma estrela com maquiagem, figurino e desfile especial.">
+    <meta property="og:image" content="https://pincelmagicoanimacoes.com.br/img/servicos-divulgacao/Camarin1.jpg">
+    <meta property="og:url" content="https://pincelmagicoanimacoes.com.br/services/camarim-fashion.html">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camarim Fashion - Pincel Mágico">
+    <meta name="twitter:description"
+        content="Maquiagem, moda e um desfile especial para transformar qualquer festa em um momento inesquecível!">
+    <meta name="twitter:image" content="https://pincelmagicoanimacoes.com.br/img/servicos-divulgacao/Camarin1.jpg">
+
+    <!-- Palavras-chave -->
+    <meta name="keywords"
+        content="Camarim Fashion, festa infantil, maquiagem para crianças, desfile de moda, diversão, eventos infantis, Pincel Mágico">
+    <meta name="author" content="Pincel Mágico">
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Videos -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "Camarim Fashion",
+          "description": "Transforme qualquer festa em um desfile de moda! Com penteados e maquiagens leves, o Camarim Fashion encanta crianças com muito brilho e estilo.",
+          "thumbnailUrl": "https://pincelmagicoanimacoes.com.br/img/thumbs/camarin-fashion.jpg",
+          "uploadDate": "2025-02-21",
+          "contentUrl": "https://pincelmagicoanimacoes.com.br/img/videos/camarin-fashion.mp4",
+          "embedUrl": "https://pincelmagicoanimacoes.com.br/services/Camarim-Fashion.html"
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar Fixa -->
+    <nav class="service-navbar">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../img/png-Pincel.webp" alt="Pincel Mágico" class="navbar-logo">
+            </a>
+        </div>
+    </nav>
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="container">
+        <div class="section">
+            <!-- Vídeo configurado para iniciar automaticamente sem som -->
+            <video id="spaVideo" autoplay muted loop controls style="width: 100%; height: auto;">
+                <source src="../img/videos/camarin-fashion.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="text">Camarim Fashion
+                <p class="description">Nosso Camarim Fashion oferece uma estrutura encantadora,
+                    combinando com cada tipo de evento. Inclui penteados e maquiagens leves, tanto para meninas quanto
+                    para meninos.</p>
+            </div>
+        </div>
+
+        <div class="section reverse">
+            <img src="../img/ser-fotos/camarim Fashion/camarinManino1.webp" alt="Imagem 2">
+            <img src="../img/ser-fotos/camarim Fashion/camarinManino2.jpg" alt="Imagem 2">
+            <div class="text">Menino</div>
+        </div>
+        <div class="section">
+            <img src="../img/ser-fotos/camarim Fashion/camarinMenina1.webp" alt="Imagem 3">
+            <img src="../img/ser-fotos/camarim Fashion/camarinMenina2.jpg" alt="Imagem 3">
+            <div class="text">Menina</div>
+        </div>
+
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/+5561981573718" class="whatsapp-float" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="60" height="60">
+        </a>
+
+
+    </section>
+    <footer class="footer">
+        © 2025 Pincel Mágico | Todos os direitos reservados.
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const serviceCards = document.querySelectorAll(".service-page-card");
+            const images = document.querySelectorAll(".service-page-gallery-item");
+            const descriptionBox = document.getElementById("service-description");
+
+            serviceCards.forEach(card => {
+                card.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const filter = card.getAttribute("data-filter");
+                    const description = card.getAttribute("data-description");
+
+                    // Atualiza o texto explicativo
+                    descriptionBox.style.opacity = "0"; // Efeito suave
+                    setTimeout(() => {
+                        descriptionBox.textContent = description;
+                        descriptionBox.style.opacity = "1";
+                    }, 300);
+
+                    // Remove classe ativa de todos os botões e adiciona no selecionado
+                    serviceCards.forEach(btn => btn.classList.remove("active"));
+                    card.classList.add("active");
+
+                    // Mostrar imagens do filtro escolhido
+                    images.forEach(img => {
+                        img.classList.toggle("active", filter === "all" || img.getAttribute("data-filter") === filter);
+                    });
+                });
+            });
+
+            // Ativar "Todos" por padrão
+            document.querySelector(".service-page-card[data-filter='all']").click();
+        });
+    </script>
+
+</body>
+
+</html>
