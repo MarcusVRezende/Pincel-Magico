@@ -359,11 +359,11 @@ body {
     margin-top: 5px;
 }
 
-/* 🖥️ Notebook - 5 Serviços por Linha */
+/* 🖥️ Notebook - 6 Serviços por Linha */
 @media (min-width: 992px) {
     .service-container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 3fr);
         gap: 10px;
     }
 
