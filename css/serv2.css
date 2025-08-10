@@ -92,6 +92,18 @@
     /* Sobrescreve a transparência */
 }
 
+
+.service-page-idade{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    background: #faa5c8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 /* Container da Logo */
 .logo-container {
     display: flex;
@@ -267,8 +279,8 @@ body {
 
     .section .text {
         width: 100%;
-        font-size: 22px;
-        margin-top: 15px;
+        font-size: 35px;
+        margin-top: 5px;
     }
 
     .description {

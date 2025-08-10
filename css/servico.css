@@ -153,6 +153,22 @@ body {
 
 }
 
+.service-page-idade{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #343a40;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif;
+    background: linear-gradient(45deg, #ff3f8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
 /* Descrição - Agora justificada */
 .service-page-description {
     font-size: 1.2rem;
@@ -256,7 +272,7 @@ body {
     margin: 25px auto;
     border-radius: 12px;
     max-width: 700px;
-    text-align: center;
+    text-align: justify;
     /* Justificado */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     font-size: 1.1rem;

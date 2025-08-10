@@ -351,19 +351,19 @@ body {
 /* Título do Serviço */
 .service-title {
     font-family: 'Fredoka One', cursive;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     /* Ajustando para telas menores */
     font-weight: bold;
     color: #26A6A6;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 /* 🖥️ Notebook - 5 Serviços por Linha */
 @media (min-width: 992px) {
     .service-container {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 10px;
     }
 
@@ -417,7 +417,7 @@ body {
     }
 
     .service-title {
-        font-size: 0.9rem;
+        font-size: 1rem;
         /* Ajustando fonte menor */
     }
 }
