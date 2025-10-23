@@ -1,6 +1,6 @@
 # 🖌️ Pincel Mágico
 
-![Capa do Projeto](file:///C:/Pincel-Magico/img/foto_readmi.jpg)
+(https://github.com/user-attachments/assets/482f01ca-0665-4c17-90cf-2c514fc40544)
 
 Este projeto é o site oficial da Pincel Mágico, uma empresa focada em animação de eventos. 
 O objetivo principal do site é apresentar o portfólio da empresa, descrever seus serviços e facilitar o contato para clientes interessados.
