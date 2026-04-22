@@ -16,6 +16,7 @@ body {
 .nav-link {
     font-family: 'Bubblegum Sans', cursive;
     color: #F2C12E !important;
+    font-size: 1.3rem;
 }
 
 .navbar-nav .nav-link:hover {
@@ -173,6 +174,10 @@ body {
     transform: rotate(-45deg);
     top: 0;
 }
+.rodape{
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
 
 /* Responsividade */
 @media (max-width: 992px) {
@@ -219,6 +224,9 @@ body {
         /* Reduzindo o tamanho da logo */
         width: auto;
     }
+    .rodape{
+        font-size: 1.1rem;
+    }
 }
 
 /* Ajuste do carrossel para não ficar atrás da navbar e ocupar mais espaço */
@@ -253,28 +261,27 @@ body {
 
 /* Ajuste para a imagem ocupar mais espaço no mobile */
 .carousel-item img {
-    height: 90vh;
+    height: 100dvh;
     width: 100%;
     object-fit: cover;
 }
 
 @media (max-width: 992px) {
     .carousel-item img {
-        height: 90vh;
-        /* Mantém o tamanho grande para tablets */
+        height: 100dvh;
     }
 }
 
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 80vh;
+        height: 80dvh;
         /* Aumenta a altura para ocupar mais a tela no mobile */
     }
 }
 
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 70vh;
+        height: 70dvh;
         /* Ocupa toda a tela em celulares menores */
     }
 }
