@@ -332,10 +332,12 @@ body {
 
 /* Cartão de Serviço */
 .service-card {
+    display: block;
     border: none;
     background: transparent;
     text-align: center;
     padding: 10px;
+    text-decoration: none;
 }
 
 /* Imagem do Serviço */

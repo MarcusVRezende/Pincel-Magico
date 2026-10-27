@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://pincelmagicoanimacoes.com.br/</loc>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/spa-party</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Spa-Party.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/recreacao-personalizada</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Recreacao-Personalizada.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/pintura-de-rosto</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Pintura-de-Rosto.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/camarim-fashion</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Camarim-Fashion.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/oficinas-criativas</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Oficinas-Criativas.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/noite-do-pijama</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Noite-do-Pijama.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/cha-das-amigas</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Cha-das-Amigas.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/clube-dos-meninos</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Clube-dos-Meninos.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/picnic</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Carrinhos-de-lanche.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://pincelmagicoanimacoes.com.br/services/pintura-gestacional</loc>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Pintura-Gestacional.html</loc>
   <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Soft-Play-Baby.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pincelmagicoanimacoes.com.br/services/Festa-Junina.html</loc>
+  <priority>0.80</priority>
+</url>
 </urlset>
