@@ -322,60 +322,89 @@ body {
     margin-bottom: 30px;
 }
 
-/* Contêiner de Serviços */
+/* Contêiner de Serviços: cards em linhas de 5 (desktop) ou 3 (tablet/celular), última linha centralizada */
 .service-container {
+    --service-gap: 20px;
+    --service-cols: 5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: var(--service-gap);
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* Cartão de Serviço */
 .service-card {
-    display: block;
-    border: none;
-    background: transparent;
+    flex: 0 0 calc((100% - (var(--service-cols) - 1) * var(--service-gap)) / var(--service-cols));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
+    padding: 24px 12px 18px;
+    border-radius: 24px;
+    background: #FFF0F6;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Fundos pastel alternados: rosa e verde-água */
+.service-card:nth-child(even) {
+    background: #E6F6F6;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* Imagem do Serviço */
 .service-img {
-    width: 155px;
-    /* Reduzindo um pouco para evitar sobreposição */
-    height: 155px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #26A6A6;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 3px #26A6A6, 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
 }
 
-.service-img:hover {
+.service-card:hover .service-img {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Título do Serviço */
 .service-title {
     font-family: 'Fredoka One', cursive;
-    font-size: 1.2rem;
-    /* Ajustando para telas menores */
+    font-size: 1.15rem;
     font-weight: bold;
-    color: #26A6A6;
-    text-align: center;
-    margin-top: 5px;
+    line-height: 1.2;
+    color: #1C8282;
+    margin: 14px 0 6px;
 }
 
-/* 🖥️ Notebook - 6 Serviços por Linha */
-@media (min-width: 992px) {
-    .service-container {
-        display: grid;
-        grid-template-columns: repeat(6, 3fr);
-        gap: 10px;
-    }
+/* "Ver mais" sempre no rodapé do card, mesmo quando o título quebra em duas linhas */
+.service-more {
+    margin-top: auto;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #F22E8A;
+}
 
+.service-more::after {
+    content: "→";
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover .service-more::after {
+    transform: translateX(4px);
+}
+
+/* 🖥️ Notebook */
+@media (min-width: 992px) {
     .navbar-collapse {
         position: relative;
         background: none;
@@ -394,48 +423,65 @@ body {
     }
 }
 
-/* 📱 Tablets - 3 Serviços por Linha */
-@media (max-width: 992px) {
-    .service-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+/* 🖥️ Telas grandes - 7 Serviços por Linha (7 + 6), seção um pouco mais larga */
+@media (min-width: 1200px) {
+    #services .container {
+        max-width: 1340px;
     }
-}
 
-/* 📱 Mobile Pequeno - Ajustando para 3 por Linha e Evitando Sobreposição */
-@media (max-width: 576px) {
     .service-container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(80px, 1fr));
-        /* Garantindo tamanho mínimo */
-        gap: 5px;
-        /* Reduzindo espaçamento para não sobrepor */
+        --service-cols: 7;
+        --service-gap: 14px;
+        max-width: 1300px;
     }
 
     .service-card {
-        width: auto;
-        /* Evita que quebre o layout */
-        padding: 5px;
+        padding: 20px 8px 16px;
     }
 
     .service-img {
-        width: 100px;
-        /* Reduzindo tamanho da imagem */
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .service-title {
-        font-size: 1rem;
-        /* Ajustando fonte menor */
+        font-size: 1.05rem;
     }
 }
 
-/* 📱 Mobile Pequeno - Centralizar o último item quando não houver par */
+/* 📱 Tablets - 3 Serviços por Linha */
+@media (max-width: 992px) {
+    .service-container {
+        --service-cols: 3;
+        --service-gap: 16px;
+    }
+}
+
+/* 📱 Celular - 3 por linha, cards compactos */
 @media (max-width: 576px) {
-    .service-card:nth-last-child(1):nth-child(3n + 1) {
-        grid-column: span 3;
-        justify-self: center;
+    .service-container {
+        --service-gap: 8px;
+    }
+
+    .service-card {
+        padding: 14px 4px 12px;
+        border-radius: 18px;
+    }
+
+    .service-img {
+        width: 80px;
+        height: 80px;
+        border-width: 3px;
+        box-shadow: 0 0 0 2px #26A6A6, 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-title {
+        font-size: 0.85rem;
+        margin: 10px 0 0;
+    }
+
+    .service-more {
+        display: none;
     }
 }
 

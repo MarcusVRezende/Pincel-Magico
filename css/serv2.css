@@ -392,8 +392,10 @@ body {
 
 /* Estilo para a galeria de imagens (Personalização) */
 .personalizacao-gallery .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* flex em vez de grid para centralizar a última linha quando ela não estiver completa */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     width: 100%;
     margin-top: 30px;
@@ -406,7 +408,7 @@ body {
 
 /* Estilo para as imagens da galeria */
 .personalizacao-gallery .image-gallery img {
-    width: 100%;
+    width: calc((100% - 60px) / 4);
     height: 350px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -421,15 +423,15 @@ body {
 
 /* Responsividade: Ajuste para telas menores */
 @media (max-width: 1024px) {
-    .personalizacao-gallery .image-gallery {
-        grid-template-columns: repeat(2, 1fr);
+    .personalizacao-gallery .image-gallery img {
+        width: calc((100% - 20px) / 2);
         /* Exibe 2 imagens por linha em telas médias */
     }
 }
 
 @media (max-width: 768px) {
-    .personalizacao-gallery .image-gallery {
-        grid-template-columns: 1fr;
+    .personalizacao-gallery .image-gallery img {
+        width: 100%;
         /* Exibe as imagens em uma coluna em dispositivos móveis */
     }
 }
@@ -461,4 +463,12 @@ body {
     .center-image-container img {
         width: 80%; 
     }
+}
+
+/* H1 do nome do serviço: mantém a aparência do texto de .section .text */
+.section .text .service-heading {
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+    margin: 0;
 }
